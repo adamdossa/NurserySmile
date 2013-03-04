@@ -17,7 +17,46 @@
 		5EDCD99D16E2927800D3714D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD99C16E2927800D3714D /* Default@2x.png */; };
 		5EDCD99F16E2927800D3714D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD99E16E2927800D3714D /* Default-568h@2x.png */; };
 		5EDCD9A216E2927800D3714D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9A016E2927800D3714D /* MainStoryboard.storyboard */; };
-		5EDCD9A516E2927800D3714D /* NurserySmileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9A416E2927800D3714D /* NurserySmileViewController.m */; };
+		5EDCD9AD16E2985800D3714D /* NurserySmileClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9AC16E2985800D3714D /* NurserySmileClass.m */; };
+		5EDCD9B116E2994700D3714D /* NurserySmileSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9B016E2994700D3714D /* NurserySmileSchool.m */; };
+		5EDCD9B416E29A5300D3714D /* NurserySmileChildrenTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9B316E29A5300D3714D /* NurserySmileChildrenTVC.m */; };
+		5EDCD9BA16E2A85200D3714D /* DiaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9B916E2A85100D3714D /* DiaperViewController.m */; };
+		5EDCD9BD16E2A86600D3714D /* SleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9BC16E2A86600D3714D /* SleepViewController.m */; };
+		5EDCD9C016E2A87A00D3714D /* DietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9BF16E2A87A00D3714D /* DietViewController.m */; };
+		5EDCD9C316E2A88C00D3714D /* MilkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9C216E2A88C00D3714D /* MilkViewController.m */; };
+		5EDCD9C616E2A89900D3714D /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9C516E2A89900D3714D /* CommentViewController.m */; };
+		5EDCD9CC16E2AB5800D3714D /* 12-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9C716E2AB5800D3714D /* 12-eye.png */; };
+		5EDCD9CD16E2AB5800D3714D /* 48-fork-and-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9C816E2AB5800D3714D /* 48-fork-and-knife.png */; };
+		5EDCD9CE16E2AB5800D3714D /* 76-baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9C916E2AB5800D3714D /* 76-baby.png */; };
+		5EDCD9CF16E2AB5800D3714D /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9CA16E2AB5800D3714D /* 96-book.png */; };
+		5EDCD9D016E2AB5800D3714D /* 173-eyedropper.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9CB16E2AB5800D3714D /* 173-eyedropper.png */; };
+		5EDCD9D316E2BB4B00D3714D /* NurserySmileDiaperReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9D216E2BB4B00D3714D /* NurserySmileDiaperReport.m */; };
+		5EDCD9D616E2EAFA00D3714D /* NurserySmileChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9D516E2EAFA00D3714D /* NurserySmileChild.m */; };
+		5EDCD9D916E2F11E00D3714D /* NurserySmileClassTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9D816E2F11D00D3714D /* NurserySmileClassTVC.m */; };
+		5EDCD9DC16E2F13A00D3714D /* NurserySmileSchoolTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9DB16E2F13A00D3714D /* NurserySmileSchoolTVC.m */; };
+		5EDCD9DF16E3AC9000D3714D /* NurserySmileTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9DE16E3AC9000D3714D /* NurserySmileTabBarVC.m */; };
+		5EDCD9E116E3BFF900D3714D /* baby-boy-crawling-clip-art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9E016E3BFF900D3714D /* baby-boy-crawling-clip-art.jpg */; };
+		5EDCD9E416E3C83600D3714D /* NurserySmileDiaperInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9E316E3C83600D3714D /* NurserySmileDiaperInfo.m */; };
+		5EDCD9E716E3CA3400D3714D /* NurserySmileDiaperChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9E616E3CA3400D3714D /* NurserySmileDiaperChange.m */; };
+		5EDCD9EA16E3CF5F00D3714D /* NurserySmileDiaperInfoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9E916E3CF5D00D3714D /* NurserySmileDiaperInfoHeader.m */; };
+		5EDCD9EC16E3D3DC00D3714D /* diaper clip art.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9EB16E3D3DC00D3714D /* diaper clip art.png */; };
+		5EDCD9EF16E3DA5800D3714D /* NurserySmileSleepReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9EE16E3DA5800D3714D /* NurserySmileSleepReport.m */; };
+		5EDCD9F516E3DA9800D3714D /* NurserySmileSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9F416E3DA9600D3714D /* NurserySmileSleep.m */; };
+		5EDCD9F716E3DC8300D3714D /* sleeping baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9F616E3DC8300D3714D /* sleeping baby.jpg */; };
+		5EDCD9FA16E3DD7500D3714D /* NurserySmileSleepInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9F916E3DD7400D3714D /* NurserySmileSleepInfo.m */; };
+		5EDCD9FD16E3E18300D3714D /* NurserySmileSleepInfoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCD9FC16E3E18200D3714D /* NurserySmileSleepInfoHeader.m */; };
+		5EDCD9FF16E3E5B800D3714D /* sleeping-baby-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCD9FE16E3E5B800D3714D /* sleeping-baby-hi.png */; };
+		5EDCDA0116E3F9C700D3714D /* babies.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCDA0016E3F9C600D3714D /* babies.JPG */; };
+		5EDCDA0416E3FB0B00D3714D /* NurserySmileCommentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCDA0316E3FB0900D3714D /* NurserySmileCommentInfo.m */; };
+		5EDCDA0716E3FB2D00D3714D /* NurserySmileCommentInfoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCDA0616E3FB2C00D3714D /* NurserySmileCommentInfoHeader.m */; };
+		5EDCDA0A16E3FBF200D3714D /* NurserySmileCommentReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCDA0916E3FBF200D3714D /* NurserySmileCommentReport.m */; };
+		5EDCDA0D16E3FC0800D3714D /* NurserySmileComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCDA0C16E3FC0700D3714D /* NurserySmileComment.m */; };
+		5EDCDA1116E414BC00D3714D /* FDTakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCDA1016E410CE00D3714D /* FDTakeController.m */; };
+		5EDCDA1316E4177800D3714D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDCDA1216E4177700D3714D /* MobileCoreServices.framework */; };
+		5EDCDA1516E4213800D3714D /* blank_sticky_note_clip_art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCDA1416E4213800D3714D /* blank_sticky_note_clip_art.jpg */; };
+		5EDCDA1716E4221800D3714D /* big_blank_blackboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCDA1616E4221800D3714D /* big_blank_blackboard.png */; };
+		5EDCDA1916E422FD00D3714D /* home-frame-photo_Vector_Clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCDA1816E422FD00D3714D /* home-frame-photo_Vector_Clipart.png */; };
+		5EDCDA1B16E4265800D3714D /* whiteboard12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCDA1A16E4265800D3714D /* whiteboard12.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +74,71 @@
 		5EDCD99C16E2927800D3714D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5EDCD99E16E2927800D3714D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5EDCD9A116E2927800D3714D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5EDCD9A316E2927800D3714D /* NurserySmileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NurserySmileViewController.h; sourceTree = "<group>"; };
-		5EDCD9A416E2927800D3714D /* NurserySmileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NurserySmileViewController.m; sourceTree = "<group>"; };
+		5EDCD9AB16E2985800D3714D /* NurserySmileClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileClass.h; sourceTree = "<group>"; };
+		5EDCD9AC16E2985800D3714D /* NurserySmileClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileClass.m; sourceTree = "<group>"; };
+		5EDCD9AF16E2994700D3714D /* NurserySmileSchool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileSchool.h; path = Model/NurserySmileSchool.h; sourceTree = "<group>"; };
+		5EDCD9B016E2994700D3714D /* NurserySmileSchool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileSchool.m; path = Model/NurserySmileSchool.m; sourceTree = "<group>"; };
+		5EDCD9B216E29A5300D3714D /* NurserySmileChildrenTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileChildrenTVC.h; sourceTree = "<group>"; };
+		5EDCD9B316E29A5300D3714D /* NurserySmileChildrenTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileChildrenTVC.m; sourceTree = "<group>"; };
+		5EDCD9B816E2A85100D3714D /* DiaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaperViewController.h; sourceTree = "<group>"; };
+		5EDCD9B916E2A85100D3714D /* DiaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaperViewController.m; sourceTree = "<group>"; };
+		5EDCD9BB16E2A86600D3714D /* SleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepViewController.h; sourceTree = "<group>"; };
+		5EDCD9BC16E2A86600D3714D /* SleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepViewController.m; sourceTree = "<group>"; };
+		5EDCD9BE16E2A87A00D3714D /* DietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietViewController.h; sourceTree = "<group>"; };
+		5EDCD9BF16E2A87A00D3714D /* DietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietViewController.m; sourceTree = "<group>"; };
+		5EDCD9C116E2A88C00D3714D /* MilkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilkViewController.h; sourceTree = "<group>"; };
+		5EDCD9C216E2A88C00D3714D /* MilkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilkViewController.m; sourceTree = "<group>"; };
+		5EDCD9C416E2A89900D3714D /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		5EDCD9C516E2A89900D3714D /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		5EDCD9C716E2AB5800D3714D /* 12-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12-eye.png"; sourceTree = "<group>"; };
+		5EDCD9C816E2AB5800D3714D /* 48-fork-and-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "48-fork-and-knife.png"; sourceTree = "<group>"; };
+		5EDCD9C916E2AB5800D3714D /* 76-baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "76-baby.png"; sourceTree = "<group>"; };
+		5EDCD9CA16E2AB5800D3714D /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
+		5EDCD9CB16E2AB5800D3714D /* 173-eyedropper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "173-eyedropper.png"; sourceTree = "<group>"; };
+		5EDCD9D116E2BB4B00D3714D /* NurserySmileDiaperReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileDiaperReport.h; path = Model/NurserySmileDiaperReport.h; sourceTree = "<group>"; };
+		5EDCD9D216E2BB4B00D3714D /* NurserySmileDiaperReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileDiaperReport.m; path = Model/NurserySmileDiaperReport.m; sourceTree = "<group>"; };
+		5EDCD9D416E2EAFA00D3714D /* NurserySmileChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileChild.h; path = Model/NurserySmileChild.h; sourceTree = "<group>"; };
+		5EDCD9D516E2EAFA00D3714D /* NurserySmileChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileChild.m; path = Model/NurserySmileChild.m; sourceTree = "<group>"; };
+		5EDCD9D716E2F11D00D3714D /* NurserySmileClassTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileClassTVC.h; sourceTree = "<group>"; };
+		5EDCD9D816E2F11D00D3714D /* NurserySmileClassTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileClassTVC.m; sourceTree = "<group>"; };
+		5EDCD9DA16E2F13900D3714D /* NurserySmileSchoolTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileSchoolTVC.h; sourceTree = "<group>"; };
+		5EDCD9DB16E2F13A00D3714D /* NurserySmileSchoolTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileSchoolTVC.m; sourceTree = "<group>"; };
+		5EDCD9DD16E3AC8F00D3714D /* NurserySmileTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileTabBarVC.h; sourceTree = "<group>"; };
+		5EDCD9DE16E3AC9000D3714D /* NurserySmileTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileTabBarVC.m; sourceTree = "<group>"; };
+		5EDCD9E016E3BFF900D3714D /* baby-boy-crawling-clip-art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-boy-crawling-clip-art.jpg"; sourceTree = "<group>"; };
+		5EDCD9E216E3C83500D3714D /* NurserySmileDiaperInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileDiaperInfo.h; sourceTree = "<group>"; };
+		5EDCD9E316E3C83600D3714D /* NurserySmileDiaperInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileDiaperInfo.m; sourceTree = "<group>"; };
+		5EDCD9E516E3CA3400D3714D /* NurserySmileDiaperChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileDiaperChange.h; path = Model/NurserySmileDiaperChange.h; sourceTree = "<group>"; };
+		5EDCD9E616E3CA3400D3714D /* NurserySmileDiaperChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileDiaperChange.m; path = Model/NurserySmileDiaperChange.m; sourceTree = "<group>"; };
+		5EDCD9E816E3CF5D00D3714D /* NurserySmileDiaperInfoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileDiaperInfoHeader.h; sourceTree = "<group>"; };
+		5EDCD9E916E3CF5D00D3714D /* NurserySmileDiaperInfoHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileDiaperInfoHeader.m; sourceTree = "<group>"; };
+		5EDCD9EB16E3D3DC00D3714D /* diaper clip art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diaper clip art.png"; sourceTree = "<group>"; };
+		5EDCD9ED16E3DA5700D3714D /* NurserySmileSleepReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileSleepReport.h; path = Model/NurserySmileSleepReport.h; sourceTree = "<group>"; };
+		5EDCD9EE16E3DA5800D3714D /* NurserySmileSleepReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileSleepReport.m; path = Model/NurserySmileSleepReport.m; sourceTree = "<group>"; };
+		5EDCD9F316E3DA9500D3714D /* NurserySmileSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileSleep.h; path = Model/NurserySmileSleep.h; sourceTree = "<group>"; };
+		5EDCD9F416E3DA9600D3714D /* NurserySmileSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileSleep.m; path = Model/NurserySmileSleep.m; sourceTree = "<group>"; };
+		5EDCD9F616E3DC8300D3714D /* sleeping baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sleeping baby.jpg"; sourceTree = "<group>"; };
+		5EDCD9F816E3DD7400D3714D /* NurserySmileSleepInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileSleepInfo.h; sourceTree = "<group>"; };
+		5EDCD9F916E3DD7400D3714D /* NurserySmileSleepInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileSleepInfo.m; sourceTree = "<group>"; };
+		5EDCD9FB16E3E18100D3714D /* NurserySmileSleepInfoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileSleepInfoHeader.h; sourceTree = "<group>"; };
+		5EDCD9FC16E3E18200D3714D /* NurserySmileSleepInfoHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileSleepInfoHeader.m; sourceTree = "<group>"; };
+		5EDCD9FE16E3E5B800D3714D /* sleeping-baby-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleeping-baby-hi.png"; sourceTree = "<group>"; };
+		5EDCDA0016E3F9C600D3714D /* babies.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babies.JPG; sourceTree = "<group>"; };
+		5EDCDA0216E3FB0800D3714D /* NurserySmileCommentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileCommentInfo.h; sourceTree = "<group>"; };
+		5EDCDA0316E3FB0900D3714D /* NurserySmileCommentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileCommentInfo.m; sourceTree = "<group>"; };
+		5EDCDA0516E3FB2B00D3714D /* NurserySmileCommentInfoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileCommentInfoHeader.h; sourceTree = "<group>"; };
+		5EDCDA0616E3FB2C00D3714D /* NurserySmileCommentInfoHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileCommentInfoHeader.m; sourceTree = "<group>"; };
+		5EDCDA0816E3FBF100D3714D /* NurserySmileCommentReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileCommentReport.h; path = Model/NurserySmileCommentReport.h; sourceTree = "<group>"; };
+		5EDCDA0916E3FBF200D3714D /* NurserySmileCommentReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileCommentReport.m; path = Model/NurserySmileCommentReport.m; sourceTree = "<group>"; };
+		5EDCDA0B16E3FC0700D3714D /* NurserySmileComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NurserySmileComment.h; path = Model/NurserySmileComment.h; sourceTree = "<group>"; };
+		5EDCDA0C16E3FC0700D3714D /* NurserySmileComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NurserySmileComment.m; path = Model/NurserySmileComment.m; sourceTree = "<group>"; };
+		5EDCDA0F16E410CC00D3714D /* FDTakeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTakeController.h; sourceTree = "<group>"; };
+		5EDCDA1016E410CE00D3714D /* FDTakeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTakeController.m; sourceTree = "<group>"; };
+		5EDCDA1216E4177700D3714D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5EDCDA1416E4213800D3714D /* blank_sticky_note_clip_art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blank_sticky_note_clip_art.jpg; path = ../../../../Columbia/DSTE/blank_sticky_note_clip_art.jpg; sourceTree = "<group>"; };
+		5EDCDA1616E4221800D3714D /* big_blank_blackboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = big_blank_blackboard.png; path = ../../../../Columbia/DSTE/big_blank_blackboard.png; sourceTree = "<group>"; };
+		5EDCDA1816E422FD00D3714D /* home-frame-photo_Vector_Clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-frame-photo_Vector_Clipart.png"; path = "../../../../Columbia/DSTE/home-frame-photo_Vector_Clipart.png"; sourceTree = "<group>"; };
+		5EDCDA1A16E4265800D3714D /* whiteboard12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = whiteboard12.gif; path = ../../../../Columbia/DSTE/whiteboard12.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDCDA1316E4177800D3714D /* MobileCoreServices.framework in Frameworks */,
 				5EDCD98916E2927800D3714D /* UIKit.framework in Frameworks */,
 				5EDCD98B16E2927800D3714D /* Foundation.framework in Frameworks */,
 				5EDCD98D16E2927800D3714D /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +159,7 @@
 		5EDCD97C16E2927800D3714D = {
 			isa = PBXGroup;
 			children = (
+				5EDCDA1216E4177700D3714D /* MobileCoreServices.framework */,
 				5EDCD98E16E2927800D3714D /* NurserySmile */,
 				5EDCD98716E2927800D3714D /* Frameworks */,
 				5EDCD98616E2927800D3714D /* Products */,
@@ -83,12 +187,41 @@
 		5EDCD98E16E2927800D3714D /* NurserySmile */ = {
 			isa = PBXGroup;
 			children = (
-				5EDCD99716E2927800D3714D /* NurserySmileAppDelegate.h */,
-				5EDCD99816E2927800D3714D /* NurserySmileAppDelegate.m */,
+				5EDCDA0F16E410CC00D3714D /* FDTakeController.h */,
+				5EDCDA1016E410CE00D3714D /* FDTakeController.m */,
 				5EDCD9A016E2927800D3714D /* MainStoryboard.storyboard */,
-				5EDCD9A316E2927800D3714D /* NurserySmileViewController.h */,
-				5EDCD9A416E2927800D3714D /* NurserySmileViewController.m */,
+				5EDCDA0516E3FB2B00D3714D /* NurserySmileCommentInfoHeader.h */,
+				5EDCDA0616E3FB2C00D3714D /* NurserySmileCommentInfoHeader.m */,
+				5EDCDA0216E3FB0800D3714D /* NurserySmileCommentInfo.h */,
+				5EDCDA0316E3FB0900D3714D /* NurserySmileCommentInfo.m */,
+				5EDCD9FB16E3E18100D3714D /* NurserySmileSleepInfoHeader.h */,
+				5EDCD9FC16E3E18200D3714D /* NurserySmileSleepInfoHeader.m */,
+				5EDCD9E816E3CF5D00D3714D /* NurserySmileDiaperInfoHeader.h */,
+				5EDCD9E916E3CF5D00D3714D /* NurserySmileDiaperInfoHeader.m */,
+				5EDCD9E216E3C83500D3714D /* NurserySmileDiaperInfo.h */,
+				5EDCD9F816E3DD7400D3714D /* NurserySmileSleepInfo.h */,
+				5EDCD9F916E3DD7400D3714D /* NurserySmileSleepInfo.m */,
+				5EDCD9E316E3C83600D3714D /* NurserySmileDiaperInfo.m */,
+				5EDCD9DD16E3AC8F00D3714D /* NurserySmileTabBarVC.h */,
+				5EDCD9DE16E3AC9000D3714D /* NurserySmileTabBarVC.m */,
+				5EDCD9B816E2A85100D3714D /* DiaperViewController.h */,
+				5EDCD9B916E2A85100D3714D /* DiaperViewController.m */,
+				5EDCD9BB16E2A86600D3714D /* SleepViewController.h */,
+				5EDCD9BC16E2A86600D3714D /* SleepViewController.m */,
+				5EDCD9BE16E2A87A00D3714D /* DietViewController.h */,
+				5EDCD9BF16E2A87A00D3714D /* DietViewController.m */,
+				5EDCD9C116E2A88C00D3714D /* MilkViewController.h */,
+				5EDCD9C216E2A88C00D3714D /* MilkViewController.m */,
+				5EDCD9C416E2A89900D3714D /* CommentViewController.h */,
+				5EDCD9C516E2A89900D3714D /* CommentViewController.m */,
+				5EDCD9B216E29A5300D3714D /* NurserySmileChildrenTVC.h */,
+				5EDCD9B316E29A5300D3714D /* NurserySmileChildrenTVC.m */,
+				5EDCD9D716E2F11D00D3714D /* NurserySmileClassTVC.h */,
+				5EDCD9D816E2F11D00D3714D /* NurserySmileClassTVC.m */,
+				5EDCD9DA16E2F13900D3714D /* NurserySmileSchoolTVC.h */,
+				5EDCD9DB16E2F13A00D3714D /* NurserySmileSchoolTVC.m */,
 				5EDCD98F16E2927800D3714D /* Supporting Files */,
+				5EDCD9AE16E2986600D3714D /* Model */,
 			);
 			path = NurserySmile;
 			sourceTree = "<group>";
@@ -96,6 +229,22 @@
 		5EDCD98F16E2927800D3714D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5EDCD9C716E2AB5800D3714D /* 12-eye.png */,
+				5EDCD9C816E2AB5800D3714D /* 48-fork-and-knife.png */,
+				5EDCD9C916E2AB5800D3714D /* 76-baby.png */,
+				5EDCD9F616E3DC8300D3714D /* sleeping baby.jpg */,
+				5EDCDA0016E3F9C600D3714D /* babies.JPG */,
+				5EDCDA1416E4213800D3714D /* blank_sticky_note_clip_art.jpg */,
+				5EDCDA1816E422FD00D3714D /* home-frame-photo_Vector_Clipart.png */,
+				5EDCDA1A16E4265800D3714D /* whiteboard12.gif */,
+				5EDCD9CA16E2AB5800D3714D /* 96-book.png */,
+				5EDCD9FE16E3E5B800D3714D /* sleeping-baby-hi.png */,
+				5EDCDA1616E4221800D3714D /* big_blank_blackboard.png */,
+				5EDCD9CB16E2AB5800D3714D /* 173-eyedropper.png */,
+				5EDCD9E016E3BFF900D3714D /* baby-boy-crawling-clip-art.jpg */,
+				5EDCD9EB16E3D3DC00D3714D /* diaper clip art.png */,
+				5EDCD99716E2927800D3714D /* NurserySmileAppDelegate.h */,
+				5EDCD99816E2927800D3714D /* NurserySmileAppDelegate.m */,
 				5EDCD99016E2927800D3714D /* NurserySmile-Info.plist */,
 				5EDCD99116E2927800D3714D /* InfoPlist.strings */,
 				5EDCD99416E2927800D3714D /* main.m */,
@@ -105,6 +254,31 @@
 				5EDCD99E16E2927800D3714D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EDCD9AE16E2986600D3714D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EDCD9F316E3DA9500D3714D /* NurserySmileSleep.h */,
+				5EDCD9F416E3DA9600D3714D /* NurserySmileSleep.m */,
+				5EDCD9AB16E2985800D3714D /* NurserySmileClass.h */,
+				5EDCD9AC16E2985800D3714D /* NurserySmileClass.m */,
+				5EDCD9AF16E2994700D3714D /* NurserySmileSchool.h */,
+				5EDCD9B016E2994700D3714D /* NurserySmileSchool.m */,
+				5EDCD9D116E2BB4B00D3714D /* NurserySmileDiaperReport.h */,
+				5EDCD9D216E2BB4B00D3714D /* NurserySmileDiaperReport.m */,
+				5EDCD9E516E3CA3400D3714D /* NurserySmileDiaperChange.h */,
+				5EDCD9E616E3CA3400D3714D /* NurserySmileDiaperChange.m */,
+				5EDCD9D416E2EAFA00D3714D /* NurserySmileChild.h */,
+				5EDCD9D516E2EAFA00D3714D /* NurserySmileChild.m */,
+				5EDCD9ED16E3DA5700D3714D /* NurserySmileSleepReport.h */,
+				5EDCD9EE16E3DA5800D3714D /* NurserySmileSleepReport.m */,
+				5EDCDA0816E3FBF100D3714D /* NurserySmileCommentReport.h */,
+				5EDCDA0916E3FBF200D3714D /* NurserySmileCommentReport.m */,
+				5EDCDA0B16E3FC0700D3714D /* NurserySmileComment.h */,
+				5EDCDA0C16E3FC0700D3714D /* NurserySmileComment.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +338,20 @@
 				5EDCD99D16E2927800D3714D /* Default@2x.png in Resources */,
 				5EDCD99F16E2927800D3714D /* Default-568h@2x.png in Resources */,
 				5EDCD9A216E2927800D3714D /* MainStoryboard.storyboard in Resources */,
+				5EDCD9CC16E2AB5800D3714D /* 12-eye.png in Resources */,
+				5EDCD9CD16E2AB5800D3714D /* 48-fork-and-knife.png in Resources */,
+				5EDCD9CE16E2AB5800D3714D /* 76-baby.png in Resources */,
+				5EDCD9CF16E2AB5800D3714D /* 96-book.png in Resources */,
+				5EDCD9D016E2AB5800D3714D /* 173-eyedropper.png in Resources */,
+				5EDCD9E116E3BFF900D3714D /* baby-boy-crawling-clip-art.jpg in Resources */,
+				5EDCD9EC16E3D3DC00D3714D /* diaper clip art.png in Resources */,
+				5EDCD9F716E3DC8300D3714D /* sleeping baby.jpg in Resources */,
+				5EDCD9FF16E3E5B800D3714D /* sleeping-baby-hi.png in Resources */,
+				5EDCDA0116E3F9C700D3714D /* babies.JPG in Resources */,
+				5EDCDA1516E4213800D3714D /* blank_sticky_note_clip_art.jpg in Resources */,
+				5EDCDA1716E4221800D3714D /* big_blank_blackboard.png in Resources */,
+				5EDCDA1916E422FD00D3714D /* home-frame-photo_Vector_Clipart.png in Resources */,
+				5EDCDA1B16E4265800D3714D /* whiteboard12.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +364,31 @@
 			files = (
 				5EDCD99516E2927800D3714D /* main.m in Sources */,
 				5EDCD99916E2927800D3714D /* NurserySmileAppDelegate.m in Sources */,
-				5EDCD9A516E2927800D3714D /* NurserySmileViewController.m in Sources */,
+				5EDCD9AD16E2985800D3714D /* NurserySmileClass.m in Sources */,
+				5EDCD9B116E2994700D3714D /* NurserySmileSchool.m in Sources */,
+				5EDCD9B416E29A5300D3714D /* NurserySmileChildrenTVC.m in Sources */,
+				5EDCD9BA16E2A85200D3714D /* DiaperViewController.m in Sources */,
+				5EDCD9BD16E2A86600D3714D /* SleepViewController.m in Sources */,
+				5EDCD9C016E2A87A00D3714D /* DietViewController.m in Sources */,
+				5EDCD9C316E2A88C00D3714D /* MilkViewController.m in Sources */,
+				5EDCD9C616E2A89900D3714D /* CommentViewController.m in Sources */,
+				5EDCD9D316E2BB4B00D3714D /* NurserySmileDiaperReport.m in Sources */,
+				5EDCD9D616E2EAFA00D3714D /* NurserySmileChild.m in Sources */,
+				5EDCD9D916E2F11E00D3714D /* NurserySmileClassTVC.m in Sources */,
+				5EDCD9DC16E2F13A00D3714D /* NurserySmileSchoolTVC.m in Sources */,
+				5EDCD9DF16E3AC9000D3714D /* NurserySmileTabBarVC.m in Sources */,
+				5EDCD9E416E3C83600D3714D /* NurserySmileDiaperInfo.m in Sources */,
+				5EDCD9E716E3CA3400D3714D /* NurserySmileDiaperChange.m in Sources */,
+				5EDCD9EA16E3CF5F00D3714D /* NurserySmileDiaperInfoHeader.m in Sources */,
+				5EDCD9EF16E3DA5800D3714D /* NurserySmileSleepReport.m in Sources */,
+				5EDCD9F516E3DA9800D3714D /* NurserySmileSleep.m in Sources */,
+				5EDCD9FA16E3DD7500D3714D /* NurserySmileSleepInfo.m in Sources */,
+				5EDCD9FD16E3E18300D3714D /* NurserySmileSleepInfoHeader.m in Sources */,
+				5EDCDA0416E3FB0B00D3714D /* NurserySmileCommentInfo.m in Sources */,
+				5EDCDA0716E3FB2D00D3714D /* NurserySmileCommentInfoHeader.m in Sources */,
+				5EDCDA0A16E3FBF200D3714D /* NurserySmileCommentReport.m in Sources */,
+				5EDCDA0D16E3FC0800D3714D /* NurserySmileComment.m in Sources */,
+				5EDCDA1116E414BC00D3714D /* FDTakeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NurserySmile/NurserySmile-Prefix.pch";
 				INFOPLIST_FILE = "NurserySmile/NurserySmile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,6 +490,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NurserySmile/NurserySmile-Prefix.pch";
 				INFOPLIST_FILE = "NurserySmile/NurserySmile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
