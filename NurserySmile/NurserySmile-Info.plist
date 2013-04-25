@@ -16,6 +16,8 @@
 			<array>
 				<string>smile.png</string>
 				<string>smile2.png</string>
+				<string>smile_72.png</string>
+				<string>smile_144.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
