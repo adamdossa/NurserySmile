@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NurserySmileSchool.h"
+#import "School.h"
+#import "CoreDataTableViewController.h"
 
-@interface NurserySmileClassTVC : UITableViewController
-@property (nonatomic, strong) NurserySmileSchool* school;
+@interface NurserySmileClassTVC : CoreDataTableViewController
+@property (nonatomic, strong) NSString* school;
+@property (nonatomic, strong) NSDate* queryDate;
 @end

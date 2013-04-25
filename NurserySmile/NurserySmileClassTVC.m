@@ -8,8 +8,8 @@
 
 #import "NurserySmileClassTVC.h"
 #import "NurserySmileChildrenTVC.h"
-#import "NurserySmileClass.h"
-
+#import "NurserySmileDateTVC.h"
+#import "Classroom.h"
 
 @interface NurserySmileClassTVC ()
 
@@ -17,37 +17,42 @@
 
 @implementation NurserySmileClassTVC
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
+- (void) viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)refresh
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // show the spinner if it's not already showing
+    [self.refreshControl beginRefreshing];
+    
+    [[FTASyncHandler sharedInstance] syncWithCompletionBlock:^{
+        //[[NSManagedObjectContext MR_defaultContext] MR_save];
+        [self.refreshControl endRefreshing];
+    } progressBlock:nil];
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void) setSchool:(NSString *)school
 {
-    return [self.school.classes count];
+    _school = school;
+    self.title = school;
+    [self setupFetchedResultsController];
+}
+
+- (void)setupFetchedResultsController
+{
+    if ([NSManagedObjectContext MR_contextForCurrentThread]) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Classroom"];
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
+        request.predicate = [NSPredicate predicateWithFormat:@"school.name = %@", self.school];
+        
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[NSManagedObjectContext MR_contextForCurrentThread] sectionNameKeyPath:nil cacheName:nil];
+        
+    } else {
+        self.fetchedResultsController = nil;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,17 +60,23 @@
     static NSString *CellIdentifier = @"ClassCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NurserySmileClass *nurseryClass = self.school.classes[indexPath.item];
-    cell.textLabel.text = nurseryClass.className;
+    Classroom *classroom = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = classroom.name;
+    
     return cell;
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //Resync our data at this point - should be in a pull down
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    Classroom *classroom = [self.fetchedResultsController objectAtIndexPath:indexPath];
     if ([segue.identifier isEqualToString:@"ChildrenSegue"]) {
         NurserySmileChildrenTVC *childrenTVC = segue.destinationViewController;
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        childrenTVC.nurseryClass = self.school.classes[indexPath.item];
+        childrenTVC.classroom = classroom;
+        childrenTVC.queryDate = self.queryDate;
     }
 }
 

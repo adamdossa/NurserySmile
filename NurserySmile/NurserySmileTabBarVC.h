@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NurserySmileTabBarVC : UITabBarController
-@property (nonatomic, strong) NSSet* children; // of NurserySmileChild
+@property (nonatomic, strong) NSSet* children; // of Child
+@property (nonatomic, strong) NSDate* queryDate;
 @end

@@ -89,15 +89,15 @@
     self.buttonTitles = nil;
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [self.sources addObject:[NSNumber numberWithInteger:UIImagePickerControllerSourceTypeCamera]];
-        [self.buttonTitles addObject:@"takePhoto"];
+        [self.buttonTitles addObject:@"Take Photo"];
     }
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         [self.sources addObject:[NSNumber numberWithInteger:UIImagePickerControllerSourceTypePhotoLibrary]];
-        [self.buttonTitles addObject:@"chooseFromLibrary"];
+        [self.buttonTitles addObject:@"Choose From Library"];
     }
     else if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
         [self.sources addObject:[NSNumber numberWithInteger:UIImagePickerControllerSourceTypeSavedPhotosAlbum]];
-        [self.buttonTitles addObject:@"chooseFromPhotoRoll"];
+        [self.buttonTitles addObject:@"Choose From Photo Roll"];
     }
     [self _setUpActionSheet];
     [self.actionSheet setTag:kPhotosActionSheetTag];

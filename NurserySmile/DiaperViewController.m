@@ -7,22 +7,15 @@
 //
 
 #import "DiaperViewController.h"
-#import "NurserySmileTabBarVC.h"
+#import "NurserySmileInfoHeader.h"
 #import "NurserySmileDiaperInfo.h"
-#import "NurserySmileDiaperInfoHeader.h"
-#import "NurserySmileChild.h"
-#import "NurserySmileDiaperChange.h"
+#import "Child.h"
+#import "DiaperChange.h"
 
 @interface DiaperViewController ()
-@property (weak, nonatomic) IBOutlet UISegmentedControl *diaperType;
-@property (weak, nonatomic) IBOutlet UIDatePicker *diaperTime;
-@property (weak, nonatomic) IBOutlet UIButton *cream;
-@property (weak, nonatomic) IBOutlet UICollectionView *diaperReports;
-
 @end
 
 @implementation DiaperViewController
-@synthesize children = _children;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,75 +26,54 @@
     return self;
 }
 
-
-- (NSArray *) children
-{
-    if (!_children) {
-        _children = [[NSArray alloc] init];
-    }
-    return _children;
-}
-
-- (void) setChildren:(NSArray *)children
-{
-    _children = children;
-    [self.diaperReports reloadData];
-}
-
-- (IBAction)addDiaperChange:(UIButton *)sender {
-    NSString *type = [self.diaperType titleForSegmentAtIndex:[self.diaperType selectedSegmentIndex]];
-    NSDate *time = [self.diaperTime date];
-    BOOL cream = self.cream.isSelected;
-    NurserySmileDiaperChange *diaperChange = [[NurserySmileDiaperChange alloc] init];
-    diaperChange.time = time;
-    diaperChange.type = type;
-    diaperChange.cream = cream;
-    for (NurserySmileChild *child in self.children) {
-        child.diaperReports = [child.diaperReports arrayByAddingObject:diaperChange];
-    }
-    [self.diaperReports reloadData];
-}
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)asker
-{
-    return [self.children count];
-}
-
-- (NSInteger)collectionView:(UICollectionView *)asker
-     numberOfItemsInSection:(NSInteger)section
-{
-    NurserySmileChild *child = self.children[section];
-    return [child.diaperReports count];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
 
+- (NSFetchRequest *) getFetchRequest
+{
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"DiaperChange"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"child.name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"startTime" ascending:YES ]];
+    return request;
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NurserySmileDiaperInfo *cell = [self.diaperReports dequeueReusableCellWithReuseIdentifier:@"DiaperInfo" forIndexPath:indexPath];
-    NurserySmileChild *child = self.children[indexPath.section];
-    NurserySmileDiaperChange *diaperChange = child.diaperReports[indexPath.item];
-    cell.diaperLabel.text = diaperChange.type;
+    
+    NurserySmileDiaperInfo *cell = [self.reportCards dequeueReusableCellWithReuseIdentifier:@"DiaperInfo" forIndexPath:indexPath];
+    DiaperChange *diaperChange = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    if (diaperChange.creamValue) {
+        cell.diaperLabel.text = [@"Cream + " stringByAppendingString:diaperChange.type];
+    } else {
+        cell.diaperLabel.text = diaperChange.type;
+    }
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"hh:mm"];
-    cell.diaperTime.text = [formatter stringFromDate:diaperChange.time];
+    [formatter setDateFormat:@"hh:mm a"];
+    cell.diaperTime.text = [formatter stringFromDate:diaperChange.startTime];
+    cell.diaperTime.textAlignment = NSTextAlignmentCenter;
+    cell.diaperLabel.textAlignment = NSTextAlignmentCenter;
+    if ([self.selectedReports containsObject:diaperChange]) {
+        cell.forDelete = YES;
+        [cell setNeedsDisplay];
+    } else {
+        cell.forDelete = NO;
+        [cell setNeedsDisplay];
+    }
     return cell;
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    NurserySmileDiaperInfoHeader *header = nil;
+    NurserySmileInfoHeader *header = nil;
     
     if ([kind isEqual:UICollectionElementKindSectionHeader])
     {
         header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                    withReuseIdentifier:@"DiaperHeader"
+                                                    withReuseIdentifier:@"InfoHeader"
                                                            forIndexPath:indexPath];
-        NurserySmileChild *child = self.children[indexPath.section];
-        header.headerLabel.text = child.childName;
+        DiaperChange *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        header.headerLabel.text = event.child.name;
     }
     return header;
 }

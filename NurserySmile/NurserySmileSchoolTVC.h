@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NurserySmileSchool.h"
+#import "School+Create.h"
 
 @interface NurserySmileSchoolTVC : UITableViewController
-+ (NurserySmileSchool*) getTestSchool;
+@property (nonatomic, strong) NSString* school;
 @end

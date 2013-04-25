@@ -19,12 +19,4 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
-{
- // Drawing code
- UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:12];
- [[UIColor redColor] setStroke];
- [roundedRect stroke];
-}
-
 @end

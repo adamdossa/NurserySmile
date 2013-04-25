@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NurserySmileInfo.h"
 
-@interface NurserySmileCommentInfo : UICollectionViewCell
+@interface NurserySmileCommentInfo : NurserySmileInfo
 @property (weak, nonatomic) IBOutlet UILabel *comment;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 

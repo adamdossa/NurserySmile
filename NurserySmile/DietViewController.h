@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NurserySmileDataEntryVC.h"
 
-@interface DietViewController : UIViewController
+@interface DietViewController : NurserySmileDataEntryVC
 
 @end

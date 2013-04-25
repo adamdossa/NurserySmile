@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NurserySmileInfo.h"
 
-@interface NurserySmileSleepInfo : UICollectionViewCell
+@interface NurserySmileSleepInfo : NurserySmileInfo
 @property (weak, nonatomic) IBOutlet UILabel *startTime;
 @property (weak, nonatomic) IBOutlet UILabel *duration;
 @end

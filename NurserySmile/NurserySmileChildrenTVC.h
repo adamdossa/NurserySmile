@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NurserySmileClass.h"
+#import "CoreDataTableViewController.h"
+#import "Classroom.h"
 
-@interface NurserySmileChildrenTVC : UITableViewController
+@interface NurserySmileChildrenTVC : CoreDataTableViewController
 
-@property (nonatomic, strong) NurserySmileClass* nurseryClass;
+@property (nonatomic, strong) Classroom* classroom;
+@property (nonatomic, strong) NSDate* queryDate;
 @property (nonatomic, strong, readonly) NSMutableSet* selectedChildren; //of Strings
 
 @end

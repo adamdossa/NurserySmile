@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NurserySmileDataEntryVC.h"
 
-@interface DiaperViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, strong) NSArray* children; //of NuserySmileChild
+@interface DiaperViewController : NurserySmileDataEntryVC
 @end

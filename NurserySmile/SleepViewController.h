@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NurserySmileDataEntryVC.h"
 
-@interface SleepViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, strong) NSArray* children; //of NuserySmileChild
-
-
+@interface SleepViewController : NurserySmileDataEntryVC
 @end

@@ -7,23 +7,16 @@
 //
 
 #import "SleepViewController.h"
-#import "NurserySmileTabBarVC.h"
 #import "NurserySmileSleepInfo.h"
-#import "NurserySmileSleepInfoHeader.h"
-#import "NurserySmileChild.h"
-#import "NurserySmileSleep.h"
+#import "NurserySmileInfoHeader.h"
+#import "Child.h"
+#import "Sleep.h"
 
 
 @interface SleepViewController ()
-@property (weak, nonatomic) IBOutlet UICollectionView *sleepReports;
-@property (weak, nonatomic) IBOutlet UIDatePicker *startTime;
-@property (weak, nonatomic) IBOutlet UIDatePicker *duration;
-
 @end
 
 @implementation SleepViewController
-@synthesize children = _children;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,84 +27,52 @@
     return self;
 }
 
-- (NSArray *) children
-{
-    if (!_children) {
-        _children = [[NSArray alloc] init];
-    }
-    return _children;
-}
-
-- (void) setChildren:(NSArray *)children
-{
-    _children = children;
-    [self.sleepReports reloadData];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    NurserySmileTabBarVC *tbVC = (NurserySmileTabBarVC *) self.tabBarController;
-//    self.children = [tbVC.children allObjects];
 }
 
-- (IBAction)addNewSleep:(UIButton *)sender {
-    NSDate *startTime = [self.startTime date];
-    NSDate *duration = [self.duration date];
-    NurserySmileSleep *sleep = [[NurserySmileSleep alloc] init];
-    sleep.startTime = startTime;
-    sleep.duration = duration;
-    for (NurserySmileChild *child in self.children) {
-        child.sleepReports = [child.sleepReports arrayByAddingObject:sleep];
-    }
-    [self.sleepReports reloadData];
-
-}
-
-
-- (void)didReceiveMemoryWarning
+- (NSFetchRequest *) getFetchRequest
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Sleep"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"child.name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"startTime" ascending:YES ]];
+    request.predicate = [NSPredicate predicateWithFormat:@"child IN %@", self.children];
+    return request;
 }
-
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)asker
-{
-    return [self.children count];
-}
-
-- (NSInteger)collectionView:(UICollectionView *)asker
-     numberOfItemsInSection:(NSInteger)section
-{
-    NurserySmileChild *child = self.children[section];
-    return [child.sleepReports count];
-}
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NurserySmileSleepInfo *cell = [self.sleepReports dequeueReusableCellWithReuseIdentifier:@"SleepInfo" forIndexPath:indexPath];
-    NurserySmileChild *child = self.children[indexPath.section];
-    NurserySmileSleep *sleep = child.sleepReports[indexPath.item];
+    NurserySmileSleepInfo *cell = [self.reportCards dequeueReusableCellWithReuseIdentifier:@"SleepInfo" forIndexPath:indexPath];
+    Sleep *sleep = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"hh:mm"];
+    [formatter setDateFormat:@"hh:mm a"];
     cell.startTime.text = [formatter stringFromDate:sleep.startTime];
-    cell.duration.text = [formatter stringFromDate:sleep.duration];
+    cell.duration.text = [@"Duration: " stringByAppendingString:[self stringFromTimeInterval:[sleep.duration doubleValue]]];
+    cell.startTime.textAlignment = NSTextAlignmentCenter;
+    cell.duration.textAlignment = NSTextAlignmentCenter;
+    
+    if ([self.selectedReports containsObject:sleep]) {
+        cell.forDelete = YES;
+        [cell setNeedsDisplay];
+    } else {
+        cell.forDelete = NO;
+        [cell setNeedsDisplay];
+    }
+
     return cell;
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    NurserySmileSleepInfoHeader *header = nil;
+    NurserySmileInfoHeader *header = nil;
     
     if ([kind isEqual:UICollectionElementKindSectionHeader])
     {
         header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                    withReuseIdentifier:@"SleepHeader"
+                                                    withReuseIdentifier:@"InfoHeader"
                                                            forIndexPath:indexPath];
-        NurserySmileChild *child = self.children[indexPath.section];
-        header.childName.text = child.childName;
+        Sleep *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        header.headerLabel.text = event.child.name;
     }
     return header;
 }

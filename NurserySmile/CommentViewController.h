@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "FDTakeController.h"
+#import "NurserySmileDataEntryVC.h"
 
-@interface CommentViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, strong) NSArray* children; //of NuserySmileChild
+@interface CommentViewController : NurserySmileDataEntryVC
 @property FDTakeController *takeController;
 @end

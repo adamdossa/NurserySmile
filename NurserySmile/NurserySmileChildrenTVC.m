@@ -7,8 +7,8 @@
 //
 
 #import "NurserySmileChildrenTVC.h"
-#import "NurserySmileChild.h"
 #import "NurserySmileTabBarVC.h"
+#import "Child.h"
 
 @interface NurserySmileChildrenTVC () <UISplitViewControllerDelegate>
 @property (nonatomic, strong, readwrite) NSMutableSet* selectedChildren; //of NurserySmileChild
@@ -16,15 +16,52 @@
 
 @implementation NurserySmileChildrenTVC
 
-- (void) awakeFromNib
+- (void) viewWillDisappear:(BOOL)animated
 {
-    self.splitViewController.delegate = self;
+    [super viewWillDisappear:animated];
+    self.selectedChildren = [[NSMutableSet alloc] init];
+    NurserySmileTabBarVC *detailVC = [self.splitViewController.viewControllers lastObject];
+    detailVC.queryDate = self.queryDate;
+    detailVC.children = self.selectedChildren;
 }
 
--(void) setClass:(NurserySmileClass *)nurseryClass
+- (void) viewDidLoad
 {
-    _nurseryClass = nurseryClass;
-    [self.tableView reloadData];
+    [super viewDidLoad];
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+}
+
+-(void) setClassroom:(Classroom *)classroom
+{
+    _classroom = classroom;
+    self.title = classroom.name;
+    [self setupFetchedResultsController];
+}
+
+- (IBAction)refresh
+{
+    // show the spinner if it's not already showing
+    [self.refreshControl beginRefreshing];
+
+    [[FTASyncHandler sharedInstance] syncWithCompletionBlock:^{
+        //[[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+        //[[NSManagedObjectContext MR_defaultContext] MR_save];
+        [self.refreshControl endRefreshing];
+    } progressBlock:nil];
+}
+
+- (void)setupFetchedResultsController
+{
+    if (self.classroom.managedObjectContext) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Child"];
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
+        request.predicate = [NSPredicate predicateWithFormat:@"classroom = %@", self.classroom];
+        
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.classroom.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+        
+    } else {
+        self.fetchedResultsController = nil;
+    }
 }
 
 -(NSMutableSet*) selectedChildren{
@@ -38,30 +75,26 @@
    shouldHideViewController:(UIViewController *)vc
               inOrientation:(UIInterfaceOrientation)orientation
 {
-    return NO;
+    return UIInterfaceOrientationIsPortrait(orientation);
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.nurseryClass.children count];
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ChildCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    NurserySmileChild *child = self.nurseryClass.children[indexPath.item];
-    cell.textLabel.text = child.childName;
+    Child *child = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = child.name;
     if ([self.selectedChildren containsObject:child]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
+    
     return cell;
+    
 }
 
 #pragma mark - Table view delegate
@@ -70,36 +103,22 @@
 {
     //Work out if the cell is already selected
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    Child *child = [self.fetchedResultsController objectAtIndexPath:indexPath];
     if (cell.accessoryType==UITableViewCellAccessoryCheckmark) {
-        [self.selectedChildren removeObject:self.nurseryClass.children[indexPath.item]];
+        [self.selectedChildren removeObject:child];
         cell.accessoryType = UITableViewCellAccessoryNone;
     } else {
-        [self.selectedChildren addObject:self.nurseryClass.children[indexPath.item]];
+        [self.selectedChildren addObject:child];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
     NurserySmileTabBarVC *detailVC = [self.splitViewController.viewControllers lastObject];
-    detailVC.children = self.selectedChildren;
+    if ([detailVC respondsToSelector:@selector(setQueryDate:)]) {
+        detailVC.queryDate = self.queryDate;
+    }
+    if ([detailVC respondsToSelector:@selector(setChildren:)]) {
+        detailVC.children = self.selectedChildren;
+    }
 }
-
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    //Work out if the cell is already selected
-//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//    if (cell.accessoryType==UITableViewCellAccessoryCheckmark) {
-//        [self.selectedChildren removeObject:self.nurseryClass.children[indexPath.item]];
-//        cell.accessoryType = UITableViewCellAccessoryNone;
-//    } else {
-//        [self.selectedChildren addObject:self.nurseryClass.children[indexPath.item]];
-//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//    }
-//
-//    if ([segue.identifier isEqualToString:@"DataEntrySegue"]) {
-//        NurserySmileTabBarVC *dataEntryTVC = segue.destinationViewController;
-//        dataEntryTVC.children = [self.selectedChildren copy];
-//    }
-//}
 
 
 @end
