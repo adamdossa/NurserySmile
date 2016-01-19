@@ -207,10 +207,7 @@
                                     <action selector="save:" destination="Kao-7H-xWH" eventType="touchUpInside" id="Jxk-KS-2tg"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-JP-OWn">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="239" id="aIG-xx-zx6"/>
-                                </constraints>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-JP-OWn">
                                 <date key="date" timeIntervalSinceReferenceDate="388098842.70162398">
                                     <!--2013-04-19 21:14:02 +0000-->
                                 </date>
@@ -256,14 +253,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstItem="cG1-ez-QXO" firstAttribute="leading" secondItem="MFV-OM-uap" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="W1Q-hA-VHY"/>
                             <constraint firstItem="On5-RD-AOa" firstAttribute="top" secondItem="eUm-jP-AYT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Wq0-gl-ZMU"/>
                             <constraint firstAttribute="trailing" secondItem="eNH-l2-hRp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Y11-Ve-W0P"/>
-                            <constraint firstItem="eNH-l2-hRp" firstAttribute="top" secondItem="On5-RD-AOa" secondAttribute="top" type="default" id="dbH-3Y-nit"/>
+                            <constraint firstAttribute="trailing" secondItem="pRh-JP-OWn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bVG-fP-cCE"/>
+                            <constraint firstItem="eNH-l2-hRp" firstAttribute="top" secondItem="eUm-jP-AYT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eSP-GT-Q6H"/>
                             <constraint firstItem="pRh-JP-OWn" firstAttribute="leading" secondItem="MFV-OM-uap" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jEG-vx-wFs"/>
                             <constraint firstItem="jtB-9A-aY1" firstAttribute="leading" secondItem="MFV-OM-uap" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jF9-iL-jNU"/>
                             <constraint firstItem="cG1-ez-QXO" firstAttribute="top" secondItem="On5-RD-AOa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jHd-LZ-6wa"/>
                             <constraint firstItem="eUm-jP-AYT" firstAttribute="top" secondItem="KCd-Pn-Jki" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kKw-Zg-k2h"/>
                             <constraint firstItem="On5-RD-AOa" firstAttribute="leading" secondItem="MFV-OM-uap" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="krY-3p-YjC"/>
                             <constraint firstAttribute="trailing" secondItem="6a2-jA-HQD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="m72-8l-gHb"/>
-                            <constraint firstItem="pRh-JP-OWn" firstAttribute="trailing" secondItem="eUm-jP-AYT" secondAttribute="trailing" type="default" id="uQn-WS-GhP"/>
                             <constraint firstItem="KCd-Pn-Jki" firstAttribute="leading" secondItem="MFV-OM-uap" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zPi-Sg-nIq"/>
                         </constraints>
                     </view>
@@ -477,13 +474,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="j9k-rz-Aty" firstAttribute="top" secondItem="ZLb-9j-VT3" secondAttribute="top" constant="35" id="6BJ-gn-Lz3"/>
+                            <constraint firstItem="T6O-Lr-W7b" firstAttribute="leading" secondItem="ZLb-9j-VT3" secondAttribute="leading" type="default" id="9cP-1c-oZo"/>
                             <constraint firstItem="j9k-rz-Aty" firstAttribute="leading" secondItem="TxY-Gn-lY6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GJz-1d-nN1"/>
                             <constraint firstAttribute="trailing" secondItem="zxg-l1-BNa" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HJF-YQ-4Nd"/>
                             <constraint firstItem="TxY-Gn-lY6" firstAttribute="leading" secondItem="ZLb-9j-VT3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ij2-Mg-BjI"/>
+                            <constraint firstItem="T6O-Lr-W7b" firstAttribute="trailing" secondItem="ZLb-9j-VT3" secondAttribute="trailing" type="default" id="NSi-Tc-2KH"/>
                             <constraint firstItem="T6O-Lr-W7b" firstAttribute="centerY" secondItem="ZLb-9j-VT3" secondAttribute="centerY" type="default" id="Phu-wV-sxK"/>
-                            <constraint firstItem="T6O-Lr-W7b" firstAttribute="leading" secondItem="ZLb-9j-VT3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VzN-KC-S1I"/>
                             <constraint firstItem="zxg-l1-BNa" firstAttribute="top" secondItem="T6O-Lr-W7b" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ypn-4s-AWB"/>
-                            <constraint firstAttribute="trailing" secondItem="T6O-Lr-W7b" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aQu-Z5-g2h"/>
                             <constraint firstItem="zxg-l1-BNa" firstAttribute="leading" secondItem="ZLb-9j-VT3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fya-Qm-LOp"/>
                             <constraint firstItem="TxY-Gn-lY6" firstAttribute="top" secondItem="ZLb-9j-VT3" secondAttribute="top" constant="36" id="l0y-If-8IF"/>
                             <constraint firstItem="Cy1-07-Lvk" firstAttribute="top" secondItem="ZLb-9j-VT3" secondAttribute="top" constant="10" id="vxf-xE-gCc"/>
@@ -499,7 +496,172 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0i-AG-tHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="2224"/>
+            <point key="canvasLocation" x="266" y="2416"/>
+        </scene>
+        <!--Nursery Smile Reminder Popover-->
+        <scene sceneID="f9X-fM-3DF">
+            <objects>
+                <viewController id="fPU-sW-Qhm" customClass="NurserySmileReminderPopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSg-7p-FcB">
+                        <rect key="frame" x="0.0" y="20" width="230" height="325"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose Reminder:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fl-HB-2us">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sr-SY-mR0">
+                                <connections>
+                                    <outlet property="dataSource" destination="fPU-sW-Qhm" id="qqs-Ud-Jod"/>
+                                    <outlet property="delegate" destination="fPU-sW-Qhm" id="1ca-ff-ume"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-az-GWc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="64i-CR-smQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="fPU-sW-Qhm" eventType="touchUpInside" id="3l0-24-lll"/>
+                                    <action selector="save:" destination="bbs-aF-Hus" eventType="touchUpInside" id="G5W-p5-alv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3fl-HB-2us" firstAttribute="leading" secondItem="lSg-7p-FcB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3Bj-g8-Wg5"/>
+                            <constraint firstItem="5Wi-az-GWc" firstAttribute="centerX" secondItem="7sr-SY-mR0" secondAttribute="centerX" type="default" id="D3i-N5-zbc"/>
+                            <constraint firstItem="7sr-SY-mR0" firstAttribute="leading" secondItem="lSg-7p-FcB" secondAttribute="leading" type="default" id="NhG-YG-zJj"/>
+                            <constraint firstItem="3fl-HB-2us" firstAttribute="top" secondItem="lSg-7p-FcB" secondAttribute="top" constant="20" symbolic="YES" type="default" id="VfI-Mi-JMc"/>
+                            <constraint firstItem="7sr-SY-mR0" firstAttribute="top" secondItem="3fl-HB-2us" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bG6-TF-RO2"/>
+                            <constraint firstItem="7sr-SY-mR0" firstAttribute="trailing" secondItem="lSg-7p-FcB" secondAttribute="trailing" type="default" id="eZd-Gh-eVZ"/>
+                            <constraint firstItem="5Wi-az-GWc" firstAttribute="top" secondItem="7sr-SY-mR0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kgV-ge-OU0"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="reminderPicker" destination="7sr-SY-mR0" id="wRX-Oq-FCN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8U-X8-0My" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1290" y="3030"/>
+        </scene>
+        <!--Reminder View Controller - Reminders-->
+        <scene sceneID="nO2-6N-ZOH">
+            <objects>
+                <viewController id="Rra-1s-k7I" customClass="ReminderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w4Q-Bh-i20">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-Tn-AI2">
+                                <items>
+                                    <barButtonItem title="Add New" id="Qzc-kZ-wNH">
+                                        <connections>
+                                            <segue destination="fPU-sW-Qhm" kind="popover" identifier="DataEntrySegue" popoverAnchorBarButtonItem="Qzc-kZ-wNH" id="0c4-Av-I3p">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GQK-cC-Tsn"/>
+                                    <barButtonItem title="Delete" id="NeC-32-3UZ">
+                                        <connections>
+                                            <action selector="deleteButton:" destination="Rra-1s-k7I" id="PE4-ZU-148"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HqE-Kc-LJF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="tHo-4o-l1o">
+                                    <size key="itemSize" width="517" height="61"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReminderInfo" id="lk5-hr-OY6" customClass="NurserySmileReminderInfo">
+                                        <rect key="frame" x="105" y="50" width="517" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="517" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVa-Vb-R47">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fVa-Vb-R47" secondAttribute="trailing" constant="20" type="default" id="lKq-Ad-Xys"/>
+                                            <constraint firstItem="fVa-Vb-R47" firstAttribute="leading" secondItem="lk5-hr-OY6" secondAttribute="leading" constant="20" type="default" id="oox-ns-8H9"/>
+                                            <constraint firstItem="fVa-Vb-R47" firstAttribute="top" secondItem="lk5-hr-OY6" secondAttribute="top" constant="20" type="default" id="ts0-JC-xgY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="reminderLabel" destination="fVa-Vb-R47" id="rQb-S9-6oT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="UMC-P3-3k0" customClass="NurserySmileInfoHeader">
+                                    <rect key="frame" x="0.0" y="0.0" width="728" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-gA-kec">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="176" id="tPI-kQ-NT9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nUh-gA-kec" firstAttribute="top" secondItem="UMC-P3-3k0" secondAttribute="top" constant="14" id="Osb-Ig-4cM"/>
+                                        <constraint firstItem="nUh-gA-kec" firstAttribute="leading" secondItem="UMC-P3-3k0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="syR-nk-mv3"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="headerLabel" destination="nUh-gA-kec" id="CY2-fR-XQh"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rra-1s-k7I" id="Xpz-cR-Efq"/>
+                                    <outlet property="delegate" destination="Rra-1s-k7I" id="SFq-AS-dkm"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HqE-Kc-LJF" firstAttribute="top" secondItem="RG9-Tn-AI2" secondAttribute="bottom" type="default" id="Csl-Gj-HM7"/>
+                            <constraint firstAttribute="trailing" secondItem="HqE-Kc-LJF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DOZ-fi-Vpi"/>
+                            <constraint firstItem="RG9-Tn-AI2" firstAttribute="top" secondItem="w4Q-Bh-i20" secondAttribute="top" type="default" id="HRi-Xp-6Z1"/>
+                            <constraint firstItem="HqE-Kc-LJF" firstAttribute="leading" secondItem="w4Q-Bh-i20" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ka1-uH-clc"/>
+                            <constraint firstItem="RG9-Tn-AI2" firstAttribute="trailing" secondItem="w4Q-Bh-i20" secondAttribute="trailing" type="default" id="NRL-c3-sUy"/>
+                            <constraint firstAttribute="bottom" secondItem="HqE-Kc-LJF" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="OmO-0Y-pc4"/>
+                            <constraint firstItem="RG9-Tn-AI2" firstAttribute="leading" secondItem="w4Q-Bh-i20" secondAttribute="leading" type="default" id="yiF-TC-2qb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reminders" image="84-lightbulb.png" id="Ndp-IZ-Ck8"/>
+                    <connections>
+                        <outlet property="addNewButton" destination="Qzc-kZ-wNH" id="Wi3-7b-ZMX"/>
+                        <outlet property="deleteTBButton" destination="NeC-32-3UZ" id="JKe-DC-gv4"/>
+                        <outlet property="reportCards" destination="HqE-Kc-LJF" id="A9k-Vi-Z1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OqM-L0-I8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2140" y="2987"/>
         </scene>
         <!--Comment View Controller - Comment-->
         <scene sceneID="3d0-5k-Lmx">
@@ -985,7 +1147,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="smile2.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAL-pg-bx1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="smile_144.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAL-pg-bx1">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="5lD-lH-YLO"/>
                                     <constraint firstAttribute="width" constant="273" id="6jy-5Z-bPs"/>
@@ -1027,7 +1189,232 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsz-EF-5YI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3126" y="1588"/>
+            <point key="canvasLocation" x="-3686" y="540"/>
+        </scene>
+        <!--Nursery Smile ReportTVC - Reports-->
+        <scene sceneID="vlE-Bd-lmd">
+            <objects>
+                <viewController id="bPQ-Ko-efn" customClass="NurserySmileReportTVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjI-ai-ytC">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="yDz-Zm-wEt">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiaperChangeReportInfo" textLabel="lZl-A0-KdT" detailTextLabel="Yhl-Kv-oGd" imageView="pX4-zk-koT" style="IBUITableViewCellStyleSubtitle" id="9OT-R8-V0M">
+                                        <rect key="frame" x="0.0" y="54" width="768" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="1" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lZl-A0-KdT">
+                                                    <rect key="frame" x="53" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yhl-Kv-oGd">
+                                                    <rect key="frame" x="53" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="diaper clip art.png" id="pX4-zk-koT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MilkReportInfo" textLabel="FIN-FP-DXU" detailTextLabel="ULg-tC-dE7" imageView="4Cs-3F-8hq" style="IBUITableViewCellStyleSubtitle" id="wJn-n9-Q2m">
+                                        <rect key="frame" x="0.0" y="99" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="0.0" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FIN-FP-DXU">
+                                                    <rect key="frame" x="31" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ULg-tC-dE7">
+                                                    <rect key="frame" x="31" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="milkbottle.png" id="4Cs-3F-8hq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="21" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DietReportInfo" textLabel="9eM-FU-QuW" detailTextLabel="tZs-uU-yLs" imageView="Euv-zt-gHK" style="IBUITableViewCellStyleSubtitle" id="P0l-yR-dnn">
+                                        <rect key="frame" x="0.0" y="143" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="0.0" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9eM-FU-QuW">
+                                                    <rect key="frame" x="74" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tZs-uU-yLs">
+                                                    <rect key="frame" x="74" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="banana.png" id="Euv-zt-gHK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SleepReportInfo" textLabel="o4W-Jp-hQb" detailTextLabel="jWc-O3-GAl" imageView="ogf-qe-aqg" style="IBUITableViewCellStyleSubtitle" id="urn-ci-kAX">
+                                        <rect key="frame" x="0.0" y="187" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="0.0" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4W-Jp-hQb">
+                                                    <rect key="frame" x="52" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jWc-O3-GAl">
+                                                    <rect key="frame" x="52" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="sleeping-baby-hi.png" id="ogf-qe-aqg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentReportInfo" textLabel="s9K-X8-Rdf" detailTextLabel="VEQ-yh-HpC" style="IBUITableViewCellStyleSubtitle" id="vvd-gj-dvF">
+                                        <rect key="frame" x="0.0" y="231" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="0.0" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s9K-X8-Rdf">
+                                                    <rect key="frame" x="10" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VEQ-yh-HpC">
+                                                    <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReminderReportInfo" textLabel="sxi-Da-Yq7" detailTextLabel="kcx-Pr-eQ7" imageView="zof-bD-aYJ" style="IBUITableViewCellStyleSubtitle" id="Wc3-za-t28">
+                                        <rect key="frame" x="0.0" y="275" width="768" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="0.0" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sxi-Da-Yq7">
+                                                    <rect key="frame" x="55" y="2" width="35" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="sticky-note-reminder-hi.png" id="zof-bD-aYJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kcx-Pr-eQ7">
+                                                    <rect key="frame" x="55" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bPQ-Ko-efn" id="9uw-9l-rK8"/>
+                                    <outlet property="delegate" destination="bPQ-Ko-efn" id="ZhG-dH-Sye"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="4lw-kL-w64">
+                                <items>
+                                    <barButtonItem title="Send Selected Reports to Parents" id="me5-MH-Pjg">
+                                        <connections>
+                                            <action selector="sendReports:" destination="bPQ-Ko-efn" id="hdm-yM-rNo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="dn5-iL-ITr">
+                                        <progressView key="customView" opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" id="aRB-XC-wDU">
+                                            <rect key="frame" x="230" y="17" width="150" height="11"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </progressView>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4lw-kL-w64" firstAttribute="top" secondItem="gjI-ai-ytC" secondAttribute="top" type="default" id="7KW-3d-1sh"/>
+                            <constraint firstItem="yDz-Zm-wEt" firstAttribute="top" secondItem="4lw-kL-w64" secondAttribute="bottom" type="default" id="952-fx-n5E"/>
+                            <constraint firstItem="yDz-Zm-wEt" firstAttribute="leading" secondItem="gjI-ai-ytC" secondAttribute="leading" type="default" id="Bai-QT-pUm"/>
+                            <constraint firstItem="4lw-kL-w64" firstAttribute="trailing" secondItem="gjI-ai-ytC" secondAttribute="trailing" type="default" id="COc-9q-eIZ"/>
+                            <constraint firstItem="4lw-kL-w64" firstAttribute="leading" secondItem="gjI-ai-ytC" secondAttribute="leading" type="default" id="Hws-e6-dHp"/>
+                            <constraint firstItem="yDz-Zm-wEt" firstAttribute="trailing" secondItem="gjI-ai-ytC" secondAttribute="trailing" type="default" id="Iuc-tP-EcD"/>
+                            <constraint firstItem="yDz-Zm-wEt" firstAttribute="bottom" secondItem="gjI-ai-ytC" secondAttribute="bottom" type="default" id="gxx-7g-RYF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reports" image="96-book.png" id="ujc-a5-wtz"/>
+                    <connections>
+                        <outlet property="progressView" destination="aRB-XC-wDU" id="hLY-9f-szB"/>
+                        <outlet property="tableView" destination="yDz-Zm-wEt" id="Vdc-Uu-x7j"/>
+                        <outlet property="toolbar" destination="4lw-kL-w64" id="Zll-dQ-wUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJ9-PO-fwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3734" y="1699"/>
         </scene>
         <!--Nursery Smile Tab BarVC-->
         <scene sceneID="Gu6-EX-R1i">
@@ -1045,559 +1432,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <segue destination="pU7-eq-yyA" kind="relationship" relationship="viewControllers" id="kdJ-kf-JcL"/>
                         <segue destination="piM-FM-6tS" kind="relationship" relationship="viewControllers" id="1gP-Bj-Fvr"/>
                         <segue destination="oj9-xr-Js0" kind="relationship" relationship="viewControllers" id="cLF-aa-dyJ"/>
+                        <segue destination="Rra-1s-k7I" kind="relationship" relationship="viewControllers" id="9eJ-a0-bud"/>
+                        <segue destination="bPQ-Ko-efn" kind="relationship" relationship="viewControllers" id="Ql8-FD-dyy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GO2-Xp-sxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1927" y="502"/>
-        </scene>
-        <!--Report View Controller - Report-->
-        <scene sceneID="9XA-Ie-LTj">
-            <objects>
-                <viewController id="dJS-sN-aDQ" customClass="ReportViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tu0-TZ-tgo">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iTF-Dh-1Ez">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LhT-a7-hll">
-                                    <size key="itemSize" width="634" height="390"/>
-                                    <size key="headerReferenceSize" width="50" height="41"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Diaper" id="agG-X5-avP" customClass="NurserySmileReportDiaperInfo">
-                                        <rect key="frame" x="47" y="41" width="634" height="149"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="634" height="149"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-Mf-TrO">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="149" id="S70-3e-0Kw"/>
-                                                        <constraint firstAttribute="width" constant="639" id="v7m-Ut-tm0"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ORz-yv-xoA">
-                                                        <size key="itemSize" width="79" height="100"/>
-                                                        <size key="headerReferenceSize" width="50" height="50"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiaperInfo" id="eho-57-O6D" customClass="NurserySmileDiaperInfo">
-                                                            <rect key="frame" x="0.0" y="50" width="79" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="100"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vL-Zg-7op">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQX-o9-Rlv">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="diaper clip art.png" translatesAutoresizingMaskIntoConstraints="NO" id="hrd-9M-n7B">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="50" id="shb-zS-Geh"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstItem="7vL-Zg-7op" firstAttribute="bottom" secondItem="eho-57-O6D" secondAttribute="bottom" type="default" id="9H4-jb-zng"/>
-                                                                <constraint firstAttribute="trailing" secondItem="hrd-9M-n7B" secondAttribute="trailing" constant="20" type="default" id="ANY-fa-UP0"/>
-                                                                <constraint firstItem="bQX-o9-Rlv" firstAttribute="top" secondItem="eho-57-O6D" secondAttribute="top" type="default" id="U7r-UB-cRf"/>
-                                                                <constraint firstItem="bQX-o9-Rlv" firstAttribute="centerX" secondItem="eho-57-O6D" secondAttribute="centerX" type="default" id="Z3S-Sn-8E8"/>
-                                                                <constraint firstItem="hrd-9M-n7B" firstAttribute="centerX" secondItem="7vL-Zg-7op" secondAttribute="centerX" type="default" id="kzG-5f-3Fq"/>
-                                                                <constraint firstItem="hrd-9M-n7B" firstAttribute="centerX" secondItem="bQX-o9-Rlv" secondAttribute="centerX" type="default" id="mHG-f5-XOy"/>
-                                                                <constraint firstItem="hrd-9M-n7B" firstAttribute="centerY" secondItem="eho-57-O6D" secondAttribute="centerY" type="default" id="z2c-Q3-nSY"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="diaperLabel" destination="7vL-Zg-7op" id="shR-Nz-lDV"/>
-                                                                <outlet property="diaperTime" destination="bQX-o9-Rlv" id="6NX-Q7-iQj"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="wUH-NU-mQq" customClass="NurserySmileInfoHeader">
-                                                        <rect key="frame" x="0.0" y="0.0" width="639" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llg-Jf-6ae">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="Llg-Jf-6ae" firstAttribute="leading" secondItem="wUH-NU-mQq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5gb-xj-mRq"/>
-                                                            <constraint firstItem="Llg-Jf-6ae" firstAttribute="centerY" secondItem="wUH-NU-mQq" secondAttribute="centerY" type="default" id="sgM-xO-XTq"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <outlet property="headerLabel" destination="Llg-Jf-6ae" id="rtu-GR-4Ix"/>
-                                                        </connections>
-                                                    </collectionReusableView>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="agG-X5-avP" id="ecN-JZ-Ecc"/>
-                                                        <outlet property="delegate" destination="agG-X5-avP" id="8eb-Ji-40e"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="XMw-Mf-TrO" firstAttribute="centerX" secondItem="agG-X5-avP" secondAttribute="centerX" type="default" id="JVP-1i-MaP"/>
-                                            <constraint firstItem="XMw-Mf-TrO" firstAttribute="top" secondItem="agG-X5-avP" secondAttribute="top" type="default" id="vaa-HV-zig"/>
-                                        </constraints>
-                                        <size key="customSize" width="634" height="149"/>
-                                        <connections>
-                                            <outlet property="reports" destination="XMw-Mf-TrO" id="2E2-LD-sAl"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Sleep" id="5Xl-f5-yqY" customClass="NurserySmileReportSleepInfo">
-                                        <rect key="frame" x="47" y="200" width="634" height="150"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="634" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lml-mw-Tcd">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="DOE-Cj-Hum"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iZr-JO-6h0">
-                                                        <size key="itemSize" width="79" height="100"/>
-                                                        <size key="headerReferenceSize" width="50" height="50"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SleepInfo" id="WbZ-MY-ir4" customClass="NurserySmileSleepInfo">
-                                                            <rect key="frame" x="0.0" y="50" width="79" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="100"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdx-2a-c7M">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baa-ti-Qg4">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="sleeping-baby-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="5fo-Go-SXa">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="49" id="3Av-rI-TVz"/>
-                                                                            <constraint firstAttribute="height" constant="50" id="Zpm-qU-dfk"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstItem="baa-ti-Qg4" firstAttribute="bottom" secondItem="WbZ-MY-ir4" secondAttribute="bottom" type="default" id="09B-3q-2BY"/>
-                                                                <constraint firstItem="Hdx-2a-c7M" firstAttribute="leading" secondItem="baa-ti-Qg4" secondAttribute="leading" type="default" id="3gt-r9-YxQ"/>
-                                                                <constraint firstItem="5fo-Go-SXa" firstAttribute="centerY" secondItem="WbZ-MY-ir4" secondAttribute="centerY" type="default" id="BDf-oO-Xd2"/>
-                                                                <constraint firstItem="Hdx-2a-c7M" firstAttribute="top" secondItem="WbZ-MY-ir4" secondAttribute="top" type="default" id="GuI-qb-6EN"/>
-                                                                <constraint firstItem="Hdx-2a-c7M" firstAttribute="leading" secondItem="WbZ-MY-ir4" secondAttribute="leading" constant="19" id="i82-1D-bx7"/>
-                                                                <constraint firstAttribute="trailing" secondItem="5fo-Go-SXa" secondAttribute="trailing" constant="20" type="default" id="qkL-cV-8tP"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="duration" destination="baa-ti-Qg4" id="2vg-Sa-zrQ"/>
-                                                                <outlet property="startTime" destination="Hdx-2a-c7M" id="iT7-Cm-Gdl"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="XKV-M5-cYB" customClass="NurserySmileInfoHeader">
-                                                        <rect key="frame" x="0.0" y="0.0" width="634" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPY-B0-Lg7">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="hPY-B0-Lg7" firstAttribute="leading" secondItem="XKV-M5-cYB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Yoe-CI-aOt"/>
-                                                            <constraint firstItem="hPY-B0-Lg7" firstAttribute="top" secondItem="XKV-M5-cYB" secondAttribute="top" constant="14" id="mY6-B1-O0G"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <outlet property="headerLabel" destination="hPY-B0-Lg7" id="goL-i2-2BM"/>
-                                                        </connections>
-                                                    </collectionReusableView>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="5Xl-f5-yqY" id="BMr-Ed-lju"/>
-                                                        <outlet property="delegate" destination="5Xl-f5-yqY" id="wrx-8d-yxL"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="lml-mw-Tcd" firstAttribute="trailing" secondItem="5Xl-f5-yqY" secondAttribute="trailing" type="default" id="71k-Vl-oyd"/>
-                                            <constraint firstItem="lml-mw-Tcd" firstAttribute="leading" secondItem="5Xl-f5-yqY" secondAttribute="leading" type="default" id="FP0-xL-V2V"/>
-                                            <constraint firstItem="lml-mw-Tcd" firstAttribute="top" secondItem="5Xl-f5-yqY" secondAttribute="top" type="default" id="Hy8-Cg-twF"/>
-                                        </constraints>
-                                        <size key="customSize" width="634" height="150"/>
-                                        <connections>
-                                            <outlet property="reports" destination="lml-mw-Tcd" id="XY0-1J-C1s"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Diet" id="l2C-bP-sBW" customClass="NurserySmileReportDietInfo">
-                                        <rect key="frame" x="47" y="360" width="634" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="634" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UIu-LF-f7n">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hj9-Fg-Roe">
-                                                        <size key="itemSize" width="79" height="110"/>
-                                                        <size key="headerReferenceSize" width="50" height="50"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DietInfo" id="agW-6O-sjn" customClass="NurserySmileDietInfo">
-                                                            <rect key="frame" x="0.0" y="50" width="79" height="110"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="110"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Meal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyt-Ce-hWL">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-Uo-EWb">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA5-OQ-eMS">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-am-vzz">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="1JV-Cz-120">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="46" id="pbF-eJ-8WI"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <constraints>
-                                                                <constraint firstItem="tC0-Uo-EWb" firstAttribute="leading" secondItem="qg6-am-vzz" secondAttribute="leading" type="default" id="65m-tS-lyd"/>
-                                                                <constraint firstItem="uyt-Ce-hWL" firstAttribute="trailing" secondItem="1JV-Cz-120" secondAttribute="trailing" type="default" id="DfJ-7u-0ns"/>
-                                                                <constraint firstItem="1JV-Cz-120" firstAttribute="centerY" secondItem="agW-6O-sjn" secondAttribute="centerY" type="default" id="Hvb-vN-h0P"/>
-                                                                <constraint firstItem="qg6-am-vzz" firstAttribute="bottom" secondItem="agW-6O-sjn" secondAttribute="bottom" type="default" id="Irx-rv-WhP"/>
-                                                                <constraint firstItem="uyt-Ce-hWL" firstAttribute="top" secondItem="agW-6O-sjn" secondAttribute="top" type="default" id="Jp6-wS-rBW"/>
-                                                                <constraint firstItem="tC0-Uo-EWb" firstAttribute="top" secondItem="agW-6O-sjn" secondAttribute="top" constant="22" id="NWF-K6-QVQ"/>
-                                                                <constraint firstItem="qg6-am-vzz" firstAttribute="trailing" secondItem="tC0-Uo-EWb" secondAttribute="trailing" type="default" id="acL-bo-roX"/>
-                                                                <constraint firstAttribute="bottom" secondItem="rA5-OQ-eMS" secondAttribute="bottom" constant="22" id="cAO-YL-qlv"/>
-                                                                <constraint firstItem="1JV-Cz-120" firstAttribute="leading" secondItem="agW-6O-sjn" secondAttribute="leading" constant="20" type="default" id="fuO-Vj-kX4"/>
-                                                                <constraint firstAttribute="trailing" secondItem="rA5-OQ-eMS" secondAttribute="trailing" constant="20" type="default" id="jDx-eV-Bma"/>
-                                                                <constraint firstItem="rA5-OQ-eMS" firstAttribute="centerX" secondItem="qg6-am-vzz" secondAttribute="centerX" type="default" id="klf-pk-X6l"/>
-                                                                <constraint firstItem="tC0-Uo-EWb" firstAttribute="centerX" secondItem="1JV-Cz-120" secondAttribute="centerX" type="default" id="rBd-zK-S1H"/>
-                                                                <constraint firstItem="uyt-Ce-hWL" firstAttribute="centerX" secondItem="tC0-Uo-EWb" secondAttribute="centerX" type="default" id="yJu-rh-Jh1"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="drinkAmount" destination="qg6-am-vzz" id="gaX-Y6-6iX"/>
-                                                                <outlet property="drinkType" destination="rA5-OQ-eMS" id="jQb-9O-MeE"/>
-                                                                <outlet property="mealAmount" destination="tC0-Uo-EWb" id="aqU-CJ-tgM"/>
-                                                                <outlet property="mealType" destination="uyt-Ce-hWL" id="arO-JQ-CVU"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="qWI-iA-lWI" customClass="NurserySmileInfoHeader">
-                                                        <rect key="frame" x="0.0" y="0.0" width="634" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-Ky-B3j">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="fgH-Ky-B3j" firstAttribute="leading" secondItem="qWI-iA-lWI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sWL-cK-ulH"/>
-                                                            <constraint firstItem="fgH-Ky-B3j" firstAttribute="top" secondItem="qWI-iA-lWI" secondAttribute="top" constant="14" id="z62-ir-vVu"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <outlet property="headerLabel" destination="fgH-Ky-B3j" id="eB4-of-HsT"/>
-                                                        </connections>
-                                                    </collectionReusableView>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="l2C-bP-sBW" id="MDg-tM-fsQ"/>
-                                                        <outlet property="delegate" destination="l2C-bP-sBW" id="hfx-oU-Lk1"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="UIu-LF-f7n" firstAttribute="bottom" secondItem="l2C-bP-sBW" secondAttribute="bottom" type="default" id="3rD-Cn-zzo"/>
-                                            <constraint firstItem="UIu-LF-f7n" firstAttribute="trailing" secondItem="l2C-bP-sBW" secondAttribute="trailing" type="default" id="bfu-RX-gCf"/>
-                                            <constraint firstItem="UIu-LF-f7n" firstAttribute="top" secondItem="l2C-bP-sBW" secondAttribute="top" type="default" id="eeH-C8-WUH"/>
-                                            <constraint firstItem="UIu-LF-f7n" firstAttribute="leading" secondItem="l2C-bP-sBW" secondAttribute="leading" type="default" id="yyX-jz-faa"/>
-                                        </constraints>
-                                        <size key="customSize" width="634" height="160"/>
-                                        <connections>
-                                            <outlet property="reports" destination="UIu-LF-f7n" id="uzh-EN-Rzd"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Milk" id="KVg-Sr-RgR" customClass="NurserySmileReportMilkInfo">
-                                        <rect key="frame" x="47" y="530" width="634" height="150"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="634" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n3Q-SK-WlK">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="639" id="07A-5a-9na"/>
-                                                        <constraint firstAttribute="height" constant="158" id="Dg0-oT-2Pz"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wph-TV-B0q">
-                                                        <size key="itemSize" width="79" height="100"/>
-                                                        <size key="headerReferenceSize" width="50" height="50"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MilkInfo" id="pHZ-vo-u7N" customClass="NurserySmileMilkInfo">
-                                                            <rect key="frame" x="0.0" y="50" width="79" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="100"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ozs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-8c-yTZ">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EB-N5-sJW">
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="milkbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="hag-cC-tVY">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="46" id="QWy-PS-YOE"/>
-                                                                            <constraint firstAttribute="height" constant="53" id="fCQ-6N-IaV"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <constraints>
-                                                                <constraint firstItem="1EB-N5-sJW" firstAttribute="leading" secondItem="pHZ-vo-u7N" secondAttribute="leading" constant="20" type="default" id="0f1-Ye-1KA"/>
-                                                                <constraint firstItem="1EB-N5-sJW" firstAttribute="top" secondItem="pHZ-vo-u7N" secondAttribute="top" type="default" id="Pqx-jw-OOC"/>
-                                                                <constraint firstItem="hag-cC-tVY" firstAttribute="centerX" secondItem="OEp-8c-yTZ" secondAttribute="centerX" type="default" id="dDz-Ho-rSy"/>
-                                                                <constraint firstItem="OEp-8c-yTZ" firstAttribute="bottom" secondItem="pHZ-vo-u7N" secondAttribute="bottom" type="default" id="e3d-S6-ITk"/>
-                                                                <constraint firstItem="hag-cC-tVY" firstAttribute="centerY" secondItem="pHZ-vo-u7N" secondAttribute="centerY" type="default" id="lnO-qs-ogH"/>
-                                                                <constraint firstItem="hag-cC-tVY" firstAttribute="centerX" secondItem="1EB-N5-sJW" secondAttribute="centerX" type="default" id="vQe-df-lXR"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="milkAmount" destination="OEp-8c-yTZ" id="8xB-J9-yQn"/>
-                                                                <outlet property="milkTime" destination="1EB-N5-sJW" id="k7y-MN-mzx"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="hdR-0v-diR" customClass="NurserySmileInfoHeader">
-                                                        <rect key="frame" x="0.0" y="0.0" width="639" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxp-GG-8IB">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="oxp-GG-8IB" firstAttribute="leading" secondItem="hdR-0v-diR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uBg-l1-x20"/>
-                                                            <constraint firstItem="oxp-GG-8IB" firstAttribute="top" secondItem="hdR-0v-diR" secondAttribute="top" constant="14" id="x24-G2-zvB"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <outlet property="headerLabel" destination="oxp-GG-8IB" id="TXw-Dg-p7u"/>
-                                                        </connections>
-                                                    </collectionReusableView>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="KVg-Sr-RgR" id="tzQ-yc-bdS"/>
-                                                        <outlet property="delegate" destination="KVg-Sr-RgR" id="5ax-La-h14"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="n3Q-SK-WlK" firstAttribute="leading" secondItem="KVg-Sr-RgR" secondAttribute="leading" type="default" id="YQZ-5P-sUM"/>
-                                            <constraint firstItem="n3Q-SK-WlK" firstAttribute="top" secondItem="KVg-Sr-RgR" secondAttribute="top" type="default" id="j1t-Lw-DnE"/>
-                                        </constraints>
-                                        <size key="customSize" width="634" height="150"/>
-                                        <connections>
-                                            <outlet property="reports" destination="n3Q-SK-WlK" id="6Da-35-c6m"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Comment" id="e7d-g0-1IP" customClass="NurserySmileReportCommentInfo">
-                                        <rect key="frame" x="47" y="690" width="634" height="390"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="634" height="390"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hrv-BQ-aJM">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="168" id="SFN-NE-I9F"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bDu-j4-Yt6">
-                                                        <size key="itemSize" width="624" height="100"/>
-                                                        <size key="headerReferenceSize" width="50" height="50"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommentInfo" id="KcW-JT-IdF" customClass="NurserySmileCommentInfo">
-                                                            <rect key="frame" x="5" y="50" width="624" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="624" height="100"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc9-8P-nCx">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="74" id="mOv-13-5jw"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mi7-BL-csc">
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="96" id="xVR-lE-R3l"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <constraints>
-                                                                <constraint firstItem="Rc9-8P-nCx" firstAttribute="leading" secondItem="KcW-JT-IdF" secondAttribute="leading" constant="20" type="default" id="3Hv-86-UIu"/>
-                                                                <constraint firstItem="Rc9-8P-nCx" firstAttribute="bottom" secondItem="Mi7-BL-csc" secondAttribute="bottom" type="default" id="Hiv-et-odg"/>
-                                                                <constraint firstItem="Mi7-BL-csc" firstAttribute="centerY" secondItem="KcW-JT-IdF" secondAttribute="centerY" type="default" id="SCD-B4-72v"/>
-                                                                <constraint firstItem="Mi7-BL-csc" firstAttribute="top" secondItem="Rc9-8P-nCx" secondAttribute="top" type="default" id="YFK-uY-Jfd"/>
-                                                                <constraint firstItem="Mi7-BL-csc" firstAttribute="leading" secondItem="Rc9-8P-nCx" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wI4-LW-dsI"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Mi7-BL-csc" secondAttribute="trailing" constant="20" type="default" id="zyh-oj-eIs"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="comment" destination="Rc9-8P-nCx" id="SVZ-GJ-DWs"/>
-                                                                <outlet property="photo" destination="Mi7-BL-csc" id="rDb-v5-BRv"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="Ucw-Jv-CXd" customClass="NurserySmileInfoHeader">
-                                                        <rect key="frame" x="0.0" y="0.0" width="634" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYz-Gc-2TJ">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="AYz-Gc-2TJ" firstAttribute="top" secondItem="Ucw-Jv-CXd" secondAttribute="top" constant="14" id="Tgp-my-Kfi"/>
-                                                            <constraint firstItem="AYz-Gc-2TJ" firstAttribute="leading" secondItem="Ucw-Jv-CXd" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xHy-f9-sNx"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <outlet property="headerLabel" destination="AYz-Gc-2TJ" id="Fd0-Qd-EZa"/>
-                                                        </connections>
-                                                    </collectionReusableView>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="e7d-g0-1IP" id="IdQ-OH-HPt"/>
-                                                        <outlet property="delegate" destination="e7d-g0-1IP" id="8r9-Fh-x3N"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="Hrv-BQ-aJM" firstAttribute="leading" secondItem="e7d-g0-1IP" secondAttribute="leading" type="default" id="PnW-gW-Pp6"/>
-                                            <constraint firstItem="Hrv-BQ-aJM" firstAttribute="top" secondItem="e7d-g0-1IP" secondAttribute="top" type="default" id="lwr-4z-cnI"/>
-                                            <constraint firstItem="Hrv-BQ-aJM" firstAttribute="trailing" secondItem="e7d-g0-1IP" secondAttribute="trailing" type="default" id="rXq-kx-qpD"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="reports" destination="Hrv-BQ-aJM" id="HtX-qD-IWI"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoHeader" id="LPU-UZ-9zC" customClass="NurserySmileInfoHeader">
-                                    <rect key="frame" x="0.0" y="0.0" width="728" height="41"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaW-Rc-V2t">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="zaW-Rc-V2t" firstAttribute="centerY" secondItem="LPU-UZ-9zC" secondAttribute="centerY" type="default" id="4Sd-6d-BJY"/>
-                                        <constraint firstItem="zaW-Rc-V2t" firstAttribute="leading" secondItem="LPU-UZ-9zC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pL3-D7-cjp"/>
-                                    </constraints>
-                                    <connections>
-                                        <outlet property="headerLabel" destination="zaW-Rc-V2t" id="to2-by-NSM"/>
-                                    </connections>
-                                </collectionReusableView>
-                                <connections>
-                                    <outlet property="dataSource" destination="dJS-sN-aDQ" id="FyQ-Uo-SMn"/>
-                                    <outlet property="delegate" destination="dJS-sN-aDQ" id="DqL-g1-k30"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="iTF-Dh-1Ez" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="95E-iD-JrA"/>
-                            <constraint firstItem="iTF-Dh-1Ez" firstAttribute="top" secondItem="Tu0-TZ-tgo" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EBw-y5-n7J"/>
-                            <constraint firstAttribute="bottom" secondItem="iTF-Dh-1Ez" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="tAe-r7-Dus"/>
-                            <constraint firstItem="iTF-Dh-1Ez" firstAttribute="leading" secondItem="Tu0-TZ-tgo" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zbw-lP-LmY"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Report" image="Notepad.png" id="nA6-rZ-i18"/>
-                    <connections>
-                        <outlet property="reportCards" destination="iTF-Dh-1Ez" id="7Cj-rR-Ko1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L6F-3c-83l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1655" y="2822"/>
         </scene>
         <!--Nursery Smile SchoolTVC - Choose Function-->
         <scene sceneID="Dwe-L8-YNz">
@@ -1652,27 +1493,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <segue destination="ZQt-uf-frb" kind="push" identifier="DateSegue" id="yth-Zl-nn6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rMk-YW-pWp" style="IBUITableViewCellStyleDefault" id="NEv-Id-5oQ">
-                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Report Card Analytics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rMk-YW-pWp">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <segue destination="ZQt-uf-frb" kind="push" identifier="ChartSegue" id="vcO-7O-lka"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1685,7 +1505,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B0-qZ-4L2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1779" y="-1303"/>
+            <point key="canvasLocation" x="-1779" y="-903"/>
         </scene>
         <!--Nursery Smile DateTVC - Choose Date-->
         <scene sceneID="Ff4-Bs-Nhq">
@@ -1725,7 +1545,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgs-Ni-8kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1064" y="-2154"/>
+            <point key="canvasLocation" x="-1200" y="-2034"/>
         </scene>
         <!--Nursery Smile ClassTVC - Choose Class-->
         <scene sceneID="19i-Qk-7rP">
@@ -1787,10 +1607,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <outlet property="delegate" destination="TTF-iL-wJ0" id="kPp-9V-iTd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Choose Children" id="00H-NA-YyD"/>
+                    <navigationItem key="navigationItem" title="Choose Children" id="00H-NA-YyD">
+                        <barButtonItem key="rightBarButtonItem" title="Select All" id="DQU-Sv-vG1">
+                            <connections>
+                                <action selector="selectAll:" destination="TTF-iL-wJ0" id="Qe5-rz-UqA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="9UD-y6-3Dr">
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
+                    <connections>
+                        <outlet property="selectAllButton" destination="DQU-Sv-vG1" id="pwB-Zt-AM7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iH1-mE-sR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2059,14 +1888,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="173-eyedropper.png" width="12" height="28"/>
         <image name="48-fork-and-knife.png" width="18" height="26"/>
         <image name="76-baby.png" width="18" height="26"/>
+        <image name="84-lightbulb.png" width="14" height="21"/>
         <image name="96-book.png" width="18" height="26"/>
-        <image name="Notepad.png" width="16" height="20"/>
         <image name="banana.png" width="800" height="534"/>
         <image name="diaper clip art.png" width="320" height="317"/>
         <image name="milkbottle.png" width="282" height="589"/>
         <image name="pie_chart__1341418102.jpg" width="3200" height="2400"/>
         <image name="sleeping-baby-hi.png" width="416" height="422"/>
-        <image name="smile2.png" width="144" height="144"/>
+        <image name="smile_144.png" width="144" height="144"/>
+        <image name="sticky-note-reminder-hi.png" width="600" height="577"/>
     </resources>
     <classes>
         <class className="CommentViewController" superclassName="NurserySmileDataEntryVC">
@@ -2087,8 +1917,18 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="MilkViewController" superclassName="NurserySmileDataEntryVC">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MilkViewController.h"/>
         </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="NurserySmileChildrenTVC" superclassName="CoreDataTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileChildrenTVC.h"/>
+            <relationships>
+                <relationship kind="action" name="selectAll:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="selectAllButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="NurserySmileClassTVC" superclassName="CoreDataTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileClassTVC.h"/>
         </class>
         <class className="NurserySmileCommentInfo" superclassName="NurserySmileInfo">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileCommentInfo.h"/>
@@ -2100,7 +1940,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="NurserySmileCommentPopover" superclassName="DataEntrySegueVC">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileCommentPopover.h"/>
             <relationships>
-                <relationship kind="action" name="addPhoto:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="addPhotoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="commentText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="photoCollection" candidateClass="UICollectionView"/>
@@ -2125,11 +1964,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </class>
         <class className="NurserySmileDiaperInfo" superclassName="NurserySmileInfo">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileDiaperInfo.h"/>
+            <relationships>
+                <relationship kind="outlet" name="diaperLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="diaperTime" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="NurserySmileDiaperPopover" superclassName="DataEntrySegueVC">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileDiaperPopover.h"/>
             <relationships>
-                <relationship kind="action" name="creamSelect:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="diaperCream" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="diaperTime" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="diaperType" candidateClass="UISegmentedControl"/>
@@ -2177,28 +2019,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="milkTime" candidateClass="UIDatePicker"/>
             </relationships>
         </class>
-        <class className="NurserySmileReportDietInfo" superclassName="NurserySmileReportInfo">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReportDietInfo.h"/>
+        <class className="NurserySmileReminderInfo" superclassName="NurserySmileInfo">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReminderInfo.h"/>
             <relationships>
-                <relationship kind="outlet" name="reports" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="reminderLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="NurserySmileReportInfo" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReportInfo.h"/>
+        <class className="NurserySmileReminderPopover" superclassName="DataEntrySegueVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReminderPopover.h"/>
             <relationships>
-                <relationship kind="outlet" name="reports" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="reminderPicker" candidateClass="UIPickerView"/>
             </relationships>
         </class>
-        <class className="NurserySmileReportMilkInfo" superclassName="NurserySmileReportInfo">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReportMilkInfo.h"/>
+        <class className="NurserySmileReportTVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReportTVC.h"/>
             <relationships>
-                <relationship kind="outlet" name="reports" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="NurserySmileReportSleepInfo" superclassName="NurserySmileReportInfo">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileReportSleepInfo.h"/>
-            <relationships>
-                <relationship kind="outlet" name="reports" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="progressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
             </relationships>
         </class>
         <class className="NurserySmileSchoolTVC" superclassName="UITableViewController">
@@ -2213,27 +2051,28 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </class>
         <class className="NurserySmileSleepPopover" superclassName="DataEntrySegueVC">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileSleepPopover.h"/>
+            <relationships>
+                <relationship kind="outlet" name="duration" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="startTime" candidateClass="UIDatePicker"/>
+            </relationships>
         </class>
         <class className="NurserySmileTabBarVC" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NurserySmileTabBarVC.h"/>
         </class>
-        <class className="ReportViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReportViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="reportCards" candidateClass="UICollectionView"/>
-            </relationships>
+        <class className="ReminderViewController" superclassName="NurserySmileDataEntryVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReminderViewController.h"/>
         </class>
         <class className="SleepViewController" superclassName="NurserySmileDataEntryVC">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SleepViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
         </class>
         <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="UIRefreshControl" superclassName="UIControl">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIRefreshControl.h"/>
@@ -2246,6 +2085,5 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="N1O-N9-tAf"/>
-        <segue reference="vcO-7O-lka"/>
     </inferredMetricsTieBreakers>
 </document>

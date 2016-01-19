@@ -350,19 +350,24 @@
         
         //If attribute is NSData, need to convert this to a PFFile
         if ([value isKindOfClass:[NSData class]]) {
-            NSString *fileName = nil;
-            if (parseObject.objectId) {
-                fileName = [NSString stringWithFormat:@"%@-%@.png", parseObject.objectId, attribute];
+            NSData *fileData = (NSData *)value;
+            if ([fileData length]) {
+                NSString *fileName = nil;
+                if (parseObject.objectId) {
+                    fileName = [NSString stringWithFormat:@"%@-%@.png", parseObject.objectId, attribute];
+                }
+                else {
+                    fileName = [NSString stringWithFormat:@"newObj-%@.png", attribute];
+                }
+                
+                PFFile *file = [PFFile fileWithName:fileName data:(NSData *)value];
+                [file save];
+                [parseObject setObject:file forKey:attribute];
+                
+                continue;
+            } else {
+                continue;
             }
-            else {
-                fileName = [NSString stringWithFormat:@"newObj-%@.png", attribute];
-            }
-            
-            PFFile *file = [PFFile fileWithName:fileName data:(NSData *)value];
-            [file save];
-            [parseObject setObject:file forKey:attribute];
-            
-            continue;
         }
         
         if (value != nil && ![attribute isEqualToString:@"createdHere"] && ![attribute isEqualToString:@"updatedAt"] && ![attribute isEqualToString:@"syncStatus"] && ![attribute isEqualToString:@"objectId"]) {

@@ -3,7 +3,6 @@
 //
 
 #import <Availability.h>
-#import "CoreData+MagicalRecord.h"
 #import "FTASync.h"
 
 #ifndef __IPHONE_5_0

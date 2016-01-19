@@ -17,6 +17,14 @@
 
 @implementation NurserySmileCommentPopover
 
+//-(UIImage*) photo
+//{
+//    if (!_photo) {
+//        _photo = [[UIImage alloc] init];
+//    }
+//    return _photo;
+//}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -51,7 +59,10 @@
         comment.date = [self day];
         comment.commentTime = [NSDate date];
         comment.comment = commentText;
-        comment.photo = UIImagePNGRepresentation(self.photo);
+        if (self.photo) {
+            //NSData *photoData = UIImagePNGRepresentation(self.photo);
+            comment.photo = UIImagePNGRepresentation(self.photo);
+        }
         [child addCommentsObject:comment];
     }
 }

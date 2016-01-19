@@ -25,6 +25,12 @@
 		5E1DF86D1725AC7E004B3E64 /* pie_chart__1341418102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E1DF86C1725AC7E004B3E64 /* pie_chart__1341418102.jpg */; };
 		5E21EEC317134182009B652F /* Notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E21EEC217134182009B652F /* Notepad.png */; };
 		5E263D61171D9EED008F0D01 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC8926F1714B5250044127A /* CoreData.framework */; };
+		5E3CEFDE172A1A760007D7EE /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CEFDD172A1A760007D7EE /* ReminderViewController.m */; };
+		5E3CEFE1172A1AA50007D7EE /* NurserySmileReminderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CEFE0172A1AA50007D7EE /* NurserySmileReminderInfo.m */; };
+		5E3CEFE4172A1AE60007D7EE /* NurserySmileReminderPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CEFE3172A1AE60007D7EE /* NurserySmileReminderPopover.m */; };
+		5E3CEFE7172AC48C0007D7EE /* NurserySmileReportTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CEFE6172AC48C0007D7EE /* NurserySmileReportTVC.m */; };
+		5E3CEFEA172AD6C50007D7EE /* sticky-note-reminder-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CEFE9172AD6C50007D7EE /* sticky-note-reminder-hi.png */; };
+		5E3CEFEC172AF1DD0007D7EE /* 84-lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CEFEB172AF1DD0007D7EE /* 84-lightbulb.png */; };
 		5E49707A16E6D95300ADCB6F /* NurserySmileDataEntryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49707916E6D95300ADCB6F /* NurserySmileDataEntryVC.m */; };
 		5E49707D16E6DD0200ADCB6F /* NurserySmileInfoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49707C16E6DD0200ADCB6F /* NurserySmileInfoHeader.m */; };
 		5E49708616E6E82000ADCB6F /* NurserySmileDiaperPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49708516E6E82000ADCB6F /* NurserySmileDiaperPopover.m */; };
@@ -103,6 +109,7 @@
 		5E933B0C16E82D1500F4C329 /* NurserySmileDietInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E933B0B16E82D1400F4C329 /* NurserySmileDietInfo.m */; };
 		5E933B1116E8416D00F4C329 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E933B1016E8416D00F4C329 /* banana.png */; };
 		5E933B1416E95A9F00F4C329 /* NurserySmileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E933B1316E95A9D00F4C329 /* NurserySmileInfo.m */; };
+		5EAE722917316EEC0094DE19 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE722717316EEC0094DE19 /* Base64.m */; };
 		5EC8914917145D010044127A /* NurserySmile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8914717145D010044127A /* NurserySmile.xcdatamodeld */; };
 		5EC892681714ABE60044127A /* School+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC892671714ABE60044127A /* School+Create.m */; };
 		5EC8926B1714AF450044127A /* Classroom+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8926A1714AF440044127A /* Classroom+Create.m */; };
@@ -153,6 +160,16 @@
 		5E186B56172099F3000F6BE4 /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
 		5E1DF86C1725AC7E004B3E64 /* pie_chart__1341418102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pie_chart__1341418102.jpg; sourceTree = "<group>"; };
 		5E21EEC217134182009B652F /* Notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Notepad.png; sourceTree = "<group>"; };
+		5E3CEFDC172A1A760007D7EE /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		5E3CEFDD172A1A760007D7EE /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		5E3CEFDF172A1AA50007D7EE /* NurserySmileReminderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileReminderInfo.h; sourceTree = "<group>"; };
+		5E3CEFE0172A1AA50007D7EE /* NurserySmileReminderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileReminderInfo.m; sourceTree = "<group>"; };
+		5E3CEFE2172A1AE60007D7EE /* NurserySmileReminderPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileReminderPopover.h; sourceTree = "<group>"; };
+		5E3CEFE3172A1AE60007D7EE /* NurserySmileReminderPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileReminderPopover.m; sourceTree = "<group>"; };
+		5E3CEFE5172AC48C0007D7EE /* NurserySmileReportTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileReportTVC.h; sourceTree = "<group>"; };
+		5E3CEFE6172AC48C0007D7EE /* NurserySmileReportTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileReportTVC.m; sourceTree = "<group>"; };
+		5E3CEFE9172AD6C50007D7EE /* sticky-note-reminder-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sticky-note-reminder-hi.png"; sourceTree = "<group>"; };
+		5E3CEFEB172AF1DD0007D7EE /* 84-lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "84-lightbulb.png"; sourceTree = "<group>"; };
 		5E49707816E6D95300ADCB6F /* NurserySmileDataEntryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileDataEntryVC.h; sourceTree = "<group>"; };
 		5E49707916E6D95300ADCB6F /* NurserySmileDataEntryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileDataEntryVC.m; sourceTree = "<group>"; };
 		5E49707B16E6DD0200ADCB6F /* NurserySmileInfoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileInfoHeader.h; sourceTree = "<group>"; };
@@ -279,8 +296,8 @@
 		5E8A3D461729B3BD00AC8080 /* NPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPReachability.m; sourceTree = "<group>"; };
 		5E8A3D471729B3BD00AC8080 /* NPReachability.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NPReachability.podspec; sourceTree = "<group>"; };
 		5E8A3D481729B3BD00AC8080 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5E8A3D6A1729B41100AC8080 /* smile_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile_72.png; sourceTree = "<group>"; };
-		5E8A3D6C1729B41400AC8080 /* smile_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile_144.png; sourceTree = "<group>"; };
+		5E8A3D6A1729B41100AC8080 /* smile_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile_72.png; path = ../smile_72.png; sourceTree = "<group>"; };
+		5E8A3D6C1729B41400AC8080 /* smile_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile_144.png; path = ../smile_144.png; sourceTree = "<group>"; };
 		5E933AF416E7D1CF00F4C329 /* NurserySmileCommentPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileCommentPopover.h; sourceTree = "<group>"; };
 		5E933AF516E7D1CF00F4C329 /* NurserySmileCommentPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileCommentPopover.m; sourceTree = "<group>"; };
 		5E933AF716E7DCED00F4C329 /* NurserySmileCommentPopoverPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileCommentPopoverPhoto.h; sourceTree = "<group>"; };
@@ -297,6 +314,8 @@
 		5E933B1016E8416D00F4C329 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
 		5E933B1216E95A9C00F4C329 /* NurserySmileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurserySmileInfo.h; sourceTree = "<group>"; };
 		5E933B1316E95A9D00F4C329 /* NurserySmileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurserySmileInfo.m; sourceTree = "<group>"; };
+		5EAE722717316EEC0094DE19 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		5EAE722817316EEC0094DE19 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		5EC8914817145D010044127A /* NurserySmile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NurserySmile.xcdatamodel; sourceTree = "<group>"; };
 		5EC892661714ABE60044127A /* School+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "School+Create.h"; path = "CoreData/School+Create.h"; sourceTree = "<group>"; };
 		5EC892671714ABE60044127A /* School+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "School+Create.m"; path = "CoreData/School+Create.m"; sourceTree = "<group>"; };
@@ -389,6 +408,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E3CEFDB172A1A5B0007D7EE /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CEFE2172A1AE60007D7EE /* NurserySmileReminderPopover.h */,
+				5E3CEFE3172A1AE60007D7EE /* NurserySmileReminderPopover.m */,
+				5E3CEFDF172A1AA50007D7EE /* NurserySmileReminderInfo.h */,
+				5E3CEFE0172A1AA50007D7EE /* NurserySmileReminderInfo.m */,
+				5E3CEFDC172A1A760007D7EE /* ReminderViewController.h */,
+				5E3CEFDD172A1A760007D7EE /* ReminderViewController.m */,
+			);
+			name = Reminder;
+			sourceTree = "<group>";
+		};
+		5E3CEFE8172AC4950007D7EE /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CEFE5172AC48C0007D7EE /* NurserySmileReportTVC.h */,
+				5E3CEFE6172AC48C0007D7EE /* NurserySmileReportTVC.m */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
 		5E49707E16E6E2B500ADCB6F /* DataEntry */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +445,7 @@
 				5E49707916E6D95300ADCB6F /* NurserySmileDataEntryVC.m */,
 				5E49707B16E6DD0200ADCB6F /* NurserySmileInfoHeader.h */,
 				5E49707C16E6DD0200ADCB6F /* NurserySmileInfoHeader.m */,
+				5E3CEFDB172A1A5B0007D7EE /* Reminder */,
 				5E933AFD16E7F53E00F4C329 /* Milk */,
 				5E49708116E6E30600ADCB6F /* Comment */,
 				5E49708216E6E31800ADCB6F /* Sleep */,
@@ -431,6 +473,10 @@
 		5E49708016E6E2DD00ADCB6F /* ClipArt */ = {
 			isa = PBXGroup;
 			children = (
+				5E3CEFEB172AF1DD0007D7EE /* 84-lightbulb.png */,
+				5E3CEFE9172AD6C50007D7EE /* sticky-note-reminder-hi.png */,
+				5E8A3D6C1729B41400AC8080 /* smile_144.png */,
+				5E8A3D6A1729B41100AC8080 /* smile_72.png */,
 				5E1DF86C1725AC7E004B3E64 /* pie_chart__1341418102.jpg */,
 				5EDCD9C716E2AB5800D3714D /* 12-eye.png */,
 				5EDCD9C816E2AB5800D3714D /* 48-fork-and-knife.png */,
@@ -497,6 +543,8 @@
 		5E8A3CFE1729B3BD00AC8080 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE722717316EEC0094DE19 /* Base64.m */,
+				5EAE722817316EEC0094DE19 /* Base64.h */,
 				5E8A3CFF1729B3BD00AC8080 /* FTASync */,
 				5E8A3D071729B3BD00AC8080 /* MagicalRecord */,
 				5E8A3D431729B3BD00AC8080 /* NPReachability */,
@@ -715,8 +763,6 @@
 		5EDCD97C16E2927800D3714D = {
 			isa = PBXGroup;
 			children = (
-				5E8A3D6C1729B41400AC8080 /* smile_144.png */,
-				5E8A3D6A1729B41100AC8080 /* smile_72.png */,
 				5EDCD98E16E2927800D3714D /* NurserySmile */,
 				5EDCD98716E2927800D3714D /* Frameworks */,
 				5EDCD98616E2927800D3714D /* Products */,
@@ -755,10 +801,11 @@
 		5EDCD98E16E2927800D3714D /* NurserySmile */ = {
 			isa = PBXGroup;
 			children = (
-				5E8A3CFE1729B3BD00AC8080 /* OpenSource */,
 				5EDCD9A016E2927800D3714D /* MainStoryboard.storyboard */,
 				5EC8914717145D010044127A /* NurserySmile.xcdatamodeld */,
+				5E8A3CFE1729B3BD00AC8080 /* OpenSource */,
 				5EC89180171463550044127A /* CoreDataModel */,
+				5E3CEFE8172AC4950007D7EE /* Report */,
 				5E49707E16E6E2B500ADCB6F /* DataEntry */,
 				5E49707F16E6E2C900ADCB6F /* Menu */,
 				5EDCD98F16E2927800D3714D /* Supporting Files */,
@@ -865,6 +912,8 @@
 				5E8A3D691729B3BD00AC8080 /* README.md in Resources */,
 				5E8A3D6B1729B41100AC8080 /* smile_72.png in Resources */,
 				5E8A3D6D1729B41400AC8080 /* smile_144.png in Resources */,
+				5E3CEFEA172AD6C50007D7EE /* sticky-note-reminder-hi.png in Resources */,
+				5E3CEFEC172AF1DD0007D7EE /* 84-lightbulb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +1024,11 @@
 				5E8A3D641729B3BD00AC8080 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				5E8A3D651729B3BD00AC8080 /* MagicalRecord.m in Sources */,
 				5E8A3D671729B3BD00AC8080 /* NPReachability.m in Sources */,
+				5E3CEFDE172A1A760007D7EE /* ReminderViewController.m in Sources */,
+				5E3CEFE1172A1AA50007D7EE /* NurserySmileReminderInfo.m in Sources */,
+				5E3CEFE4172A1AE60007D7EE /* NurserySmileReminderPopover.m in Sources */,
+				5E3CEFE7172AC48C0007D7EE /* NurserySmileReportTVC.m in Sources */,
+				5EAE722917316EEC0094DE19 /* Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

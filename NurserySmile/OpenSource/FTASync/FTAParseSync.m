@@ -85,11 +85,20 @@
     
     //Update objects on remote
     FSLog(@"Sending objects to Parse: %@", updatedParseObjects);
-    BOOL success = [PFObject saveAll:updatedParseObjects error:error];
-    if (!success) {
-        FSLog(@"saveAll failed with:");
-        return NO;
+    for (PFObject *updatedParseObject in updatedParseObjects) {
+        BOOL success = [updatedParseObject save:error];
+        if (!success) {
+            FSLog(@"saveAll failed with:");
+            return NO;
+        } else {
+            FSLog(@"save succeeded");
+        }
     }
+//    BOOL success = [PFObject saveAll:updatedParseObjects error:error];
+//    if (!success) {
+//        FSLog(@"saveAll failed with:");
+//        return NO;
+//    }
     FSLog(@"After sending objects to Parse: %@", updatedParseObjects);
     
     //Update local deleted objects with Parse results

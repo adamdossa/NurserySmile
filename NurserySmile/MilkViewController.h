@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Adam Dossa. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "NurserySmileDataEntryVC.h"
 
 

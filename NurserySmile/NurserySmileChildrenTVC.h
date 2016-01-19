@@ -13,6 +13,7 @@
 @interface NurserySmileChildrenTVC : CoreDataTableViewController
 
 @property (nonatomic, strong) Classroom* classroom;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *selectAllButton;
 @property (nonatomic, strong) NSDate* queryDate;
 @property (nonatomic, strong, readonly) NSMutableSet* selectedChildren; //of Strings
 

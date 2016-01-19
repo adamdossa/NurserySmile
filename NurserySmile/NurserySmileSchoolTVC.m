@@ -76,7 +76,7 @@
 
 - (NSString *) school
 {
-    return @"TestSchool";
+    return @"SmarterToddler";
 }
 
 //- (void) setupSchool
@@ -101,10 +101,10 @@
         return;
     }
     
-    NSSet *purpleChildNames = [[NSSet alloc] initWithArray:@[@"Ben Dossa",@"Vicky Gilbert",@"Emily Hughes",@"Rosanne Graham", @"David Clewin", @"Dan Harris", @"Chloe Dench", @"Elizabeth Dossa", @"Cory Street"]];
-    NSSet *redChildNames = [[NSSet alloc] initWithArray:@[@"Ben Dossa1",@"Vicky Gilbert1",@"Emily Hughes1",@"Rosanne Graham1", @"David Clewin1", @"Dan Harris1", @"Chloe Dench1", @"Louis Shaffner1", @"Cory Street1"]];
-    NSDictionary *classrooms = @{@"Purple Class": purpleChildNames, @"Red Class": redChildNames};
-    [School schoolWithName:@"TestSchool" andClasses:classrooms inManagedObjectContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+    NSSet *purpleChildNames = [[NSSet alloc] initWithArray:@[@"Saharra",@"Celeste",@"Kyle",@"Jesse", @"Rebecca"]];
+    NSSet *redChildNames = [[NSSet alloc] initWithArray:@[@"Oliver",@"Nathan",@"Tim",@"Emma"]];
+    NSDictionary *classrooms = @{@"Classroom 3": purpleChildNames, @"Classroom 4": redChildNames};
+    [School schoolWithName:@"SmarterToddler" andClasses:classrooms inManagedObjectContext:[NSManagedObjectContext MR_contextForCurrentThread]];
     [[FTASyncHandler sharedInstance] syncWithCompletionBlock:^{
         //[[NSManagedObjectContext MR_defaultContext] MR_save];
     }progressBlock:nil];

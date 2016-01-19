@@ -37,6 +37,21 @@
     self.title = classroom.name;
     [self setupFetchedResultsController];
 }
+- (IBAction)selectAll:(UIBarButtonItem *)sender {
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:FALSE];
+    NSUInteger numberOfSections = [self.tableView numberOfSections];
+    for (NSUInteger s = 0; s < numberOfSections; ++s) {
+        NSUInteger numberOfRowsInSection = [self.tableView numberOfRowsInSection:s];
+        for (NSUInteger r = 0; r < numberOfRowsInSection; ++r) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:r inSection:s];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+            if (cell.accessoryType == UITableViewCellAccessoryNone) {
+                [self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+            }
+        }
+    }
+    [self.tableView reloadData];
+}
 
 - (IBAction)refresh
 {

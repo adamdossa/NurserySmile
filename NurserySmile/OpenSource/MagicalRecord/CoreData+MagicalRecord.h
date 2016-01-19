@@ -1,8 +1,3 @@
-
-#ifndef NS_BLOCKS_AVAILABLE
-    #warning MagicalRecord requires blocks
-#endif
-
 #ifdef __OBJC__
 //    #if !( __has_feature(objc_arc) && __has_feature(objc_arc_weak) )
 //        #error MagicalRecord now requires ARC to be enabled
